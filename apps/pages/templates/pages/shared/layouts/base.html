@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include "pages/shared/partials/head.html" %}
+</head>
+
+<body>
+    {% include "pages/shared/partials/preloader.html" %}
+
+    {% include "pages/shared/partials/header.html" %}
+    {% include "pages/shared/partials/slider.html" %}
+
+
+    {% block content %}{% endblock %}
+
+    {% include "pages/shared/partials/footer.html" %}
+    {% include "pages/shared/partials/scroll.html" %}
+    {% include "pages/shared/partials/scripts.html" %}
+
+    {% block scripts %} {% endblock %}
+</body>
+
+</html>

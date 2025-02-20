@@ -8,9 +8,9 @@
     });
 
     /* Aos animation on scroll */
-    /* AOS.init({
+    AOS.init({
         once: true,
-    }); */
+    });
 
     /* Header two fixed on scroll */
     // var doc = document.documentElement;
@@ -191,15 +191,14 @@
     var BryMainSlider = new Swiper(".hero-slider.swiper-container", {
         loop: true,
         centeredSlides: true,
-        speed: 1000,
+        speed: 500,
         parallax: true,
         autoplay: {
-            delay: 5000,
+            delay: 1000,
         },
         effect: 'fade',
-        autoplay: false,
+        autoplay: true,
         autoHeight: true,
-        speed: 2500,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
