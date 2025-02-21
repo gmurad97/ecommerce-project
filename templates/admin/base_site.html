@@ -4,28 +4,8 @@
 
 {% block branding %}
 <div id="site-name">
-  <span class="z"></span>
-  <a href="{% url 'admin:index' %}">{{ site_header|default:_('Django administration') }}</a>
-  <span class="z"></span>
+  <a href="{% url 'admin:index' %}">⚜️{{ site_header|default:_('Django administration') }}⚜️</a>
 </div>
-
-<script>
-const emojis = ["😐", "🤨", "🙂", "😏", "😃", "😁", "😆", "😂", "🤣", "😆", "😁", "😃", "😏", "🙂", "🤨", "😐"];
-let index = 0;
-const emojiElements = document.getElementsByClassName("z");
-
-function animateEmojis() {
-    Array.from(emojiElements).forEach(element => {
-        element.textContent = emojis[index];
-    });
-
-    index = (index + 1) % emojis.length;
-    setTimeout(animateEmojis, 256);
-}
-
-animateEmojis();
-
-</script>
 {% if user.is_anonymous %}
   {% include "admin/color_theme_toggle.html" %}
 {% endif %}
