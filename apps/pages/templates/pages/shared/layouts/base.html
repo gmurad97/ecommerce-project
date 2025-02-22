@@ -3,21 +3,28 @@
 
 <head>
     {% include "pages/shared/partials/head.html" %}
+    {% block extra_css %}{% endblock %}
 </head>
 
 <body>
     <main class="main">
         <div class="main-inner">
-            {% include "pages/shared/partials/mobile_sidebar.html" %}
-            {% include "pages/shared/partials/header.html" %}
+            {% include "pages/shared/partials/sidebar_mobile.html" %}
+            <header class="header">
+                {% include "pages/shared/partials/topbar.html" %}
+                {% include "pages/shared/partials/navbar.html" %}
+            </header>
             {% include "pages/shared/partials/breadcrumbs.html" %}
 
-            {% block content %}
-            {% endblock %}
+
+            {% include "pages/shared/partials/slider.html" %}
+
+            {% block content %}{% endblock %}
         </div>
         {% include "pages/shared/partials/footer.html" %}
     </main>
     {% include "pages/shared/partials/scripts.html" %}
+    {% block extra_js %}{% endblock %}
 </body>
 
 </html>

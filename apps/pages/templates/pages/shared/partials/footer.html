@@ -1,4 +1,6 @@
-        <!-- Begin footer -->
+{% load static %}
+
+<!-- Begin footer -->
         <footer class="footer">
             <div class="footer-main">
                 <div class="container">
@@ -8,7 +10,7 @@
                             <div class="widget-brand-info">
                                 <div class="widget-brand-info-main wbim-p">
                                     <a href="../index.html" class="logo" title="PathSoft">
-                                        <img data-src="assets/img/logo-white.svg" class="lazy" width="133" height="36" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="PathSoft">
+                                        <img data-src="{% static 'pages/img/logo-white.svg' %}" class="lazy" width="133" height="36" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="PathSoft">
                                     </a>
                                     <p>Our company has been developing high-quality and reliable software for corporate needs since 2008. We are renowned professionals of software development.</p>
                                 </div>
@@ -16,28 +18,28 @@
                                     <li>
                                         <a href="404.html#!" title="Facebook">
                                             <svg viewBox="0 0 320 512">
-                                                <use xlink:href="assets/img/sprite.svg#facebook-icon"></use>
+                                                <use xlink:href="{% static 'pages/img/sprite.svg' %}#facebook-icon"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="404.html#!" title="Instagram">
                                             <svg viewBox="0 0 448 512">
-                                                <use xlink:href="assets/img/sprite.svg#instagram-icon"></use>
+                                                <use xlink:href="{% static 'pages/img/sprite.svg' %}#instagram-icon"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="404.html#!" title="LinkedIn">
                                             <svg viewBox="0 0 448 512">
-                                                <use xlink:href="assets/img/sprite.svg#linkedin-icon"></use>
+                                                <use xlink:href="{% static 'pages/img/sprite.svg' %}#linkedin-icon"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="404.html#!" title="Twitter">
                                             <svg viewBox="0 0 512 512">
-                                                <use xlink:href="assets/img/sprite.svg#twitter-icon"></use>
+                                                <use xlink:href="{% static 'pages/img/sprite.svg' %}#twitter-icon"></use>
                                             </svg>
                                         </a>
                                     </li>

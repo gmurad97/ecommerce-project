@@ -6,5 +6,5 @@ class PagesConfig(AppConfig):
     name = "apps.pages"
     verbose_name = "Content"
 
-    # def ready(self,*args,**kwargs):
-    #     pass
+    def ready(self):
+        from . import signals

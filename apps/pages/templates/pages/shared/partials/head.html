@@ -1,26 +1,17 @@
-<meta charset="utf-8">
+{% load static %}
 
-<title>PathSoft - #1 The Fastest HTML5 Template</title>
-
-<meta name="description" content="Description">
+<meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-
-<link rel="icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
-
-<link rel="stylesheet" href="assets/css/bootstrap-grid.css">
-<link rel="stylesheet" href="assets/libs/flickity/flickity.css">
-<link rel="stylesheet" href="assets/libs/flickity/flickity-fade.css">
-<link rel="stylesheet" href="assets/libs/lightGallery/css/lightgallery.css">
-<link rel="stylesheet" href="assets/libs/lightGallery/css/lg-zoom.css">
-<link rel="stylesheet" href="assets/libs/lightGallery/css/lg-thumbnail.css">
-<link rel="stylesheet" href="assets/libs/lightGallery/css/lg-video.css">
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/css/ecommerce.css">
-<link rel="preload" href="assets/fonts/source-sans-pro-v21-latin/source-sans-pro-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/source-sans-pro-v21-latin/source-sans-pro-v21-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/montserrat-v25-latin/montserrat-v25-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/montserrat-v25-latin/montserrat-v25-latin-600.woff2" as="font" type="font/woff2" crossorigin>
-
-<link rel="preload" href="assets/fonts/material-icons/material-icons.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/material-icons/material-icons-outlined.woff2" as="font" type="font/woff2" crossorigin>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PathSoft - {{ page_title|default:"Undefined" }}</title>
+<link rel="shortcut icon" href="{% static 'pages/img/favicon/favicon.ico' %}" type="image/x-icon">
+<link rel="stylesheet" href="{% static 'pages/vendors/flickity/flickity.css' %}">
+<link rel="stylesheet" href="{% static 'pages/vendors/flickity/flickity-fade.css' %}">
+<link rel="stylesheet" href="{% static 'pages/vendors/lightgallery/css/lightgallery.css' %}">
+<link rel="stylesheet" href="{% static 'pages/vendors/lightgallery/css/lg-zoom.css' %}">
+<link rel="stylesheet" href="{% static 'pages/vendors/lightgallery/css/lg-thumbnail.css' %}">
+<link rel="stylesheet" href="{% static 'pages/vendors/lightgallery/css/lg-video.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/bootstrap-grid.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/style.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/ecommerce.css' %}">
+{% block extra_css %}{% endblock %}
