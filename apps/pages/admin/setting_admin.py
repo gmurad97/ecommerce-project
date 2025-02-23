@@ -1,19 +1,30 @@
 from django.contrib import admin
 from django.utils.safestring import mark_safe
-from ..models import Brand
+from ..models import Setting
 
 
-@admin.register(Brand)
-class BrandAdmin(admin.ModelAdmin):
-    list_display = ("name", "created_at_tag", "updated_at_tag", "status")
-    list_display_links = ("name",)
-    list_editable = ("status",)
+@admin.register(Setting)
+class SettingAdmin(admin.ModelAdmin):
+    list_display = ("str_tag", "created_at_tag", "updated_at_tag")
+    list_display_links = ("str_tag",)
     list_per_page = 10
-    list_filter = ("status", "created_at", "updated_at")
-    search_fields = ("name",)
     readonly_fields = ("created_at", "updated_at", "deleted_at")
     fieldsets = (
-        ("Main Settings", {"fields": ("name",)}),
+        (
+            "Main Settings",
+            {
+                "fields": (
+                    ("maintenance_mode", "snow_mode"),
+                    "email",
+                    "phone",
+                    "working_time",
+                    "facebook",
+                    "instagram",
+                    "linkedin",
+                    "twitter",
+                )
+            },
+        ),
         (
             "General Information",
             {
@@ -22,6 +33,16 @@ class BrandAdmin(admin.ModelAdmin):
             },
         ),
     )
+
+    def has_add_permission(self, request):
+        return not Setting.objects.exists()
+
+    def has_delete_permission(self, request, obj=None):
+        return False
+
+    @admin.display(description="Type")
+    def str_tag(self, obj):
+        return f"⚙️{obj.__str__()}⚙️"
 
     @admin.display(description="Created At")
     def created_at_tag(self, obj):

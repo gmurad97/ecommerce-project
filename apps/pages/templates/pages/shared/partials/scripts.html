@@ -24,7 +24,8 @@
 <script src="{% static 'pages/js/forms.js' %}"></script>
 <script src="{% static 'pages/js/custom-ecommerce.js' %}"></script>
 {% block extra_js %}{% endblock %}
-{% if "true" %}
+
+{% if settings.snow_mode %}
     <script src="{% static 'pages/js/snowflakes.min.js' %}"></script>
     <script>
         new Snowflakes({

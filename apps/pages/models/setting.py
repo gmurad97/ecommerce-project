@@ -2,13 +2,14 @@ from django.db import models
 
 
 class Setting(models.Model):
+    maintenance_mode = models.BooleanField(
+        default=False, verbose_name="Maintenance Mode"
+    )
     snow_mode = models.BooleanField(default=False, verbose_name="Snow Mode")
     email = models.EmailField(
         max_length=255, blank=True, null=True, verbose_name="Email"
     )
-    contact_phone = models.CharField(
-        max_length=24, blank=True, null=True, verbose_name="Contact Phone"
-    )
+    phone = models.CharField(max_length=24, blank=True, null=True, verbose_name="Phone")
     facebook = models.URLField(blank=True, null=True, verbose_name="Facebook")
     instagram = models.URLField(blank=True, null=True, verbose_name="Instagram")
     linkedin = models.URLField(blank=True, null=True, verbose_name="Linkedin")

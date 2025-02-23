@@ -22,3 +22,19 @@ def set_slug_product(sender, instance, **kwargs):
 def delete_image_product(sender, instance, **kwargs):
     if instance.image and instance.image.name != "resources/product_default.png":
         instance.image.delete(save=False)
+
+
+@receiver(pre_save, sender=Product)
+def delete_old_image_product(sender, instance, **kwargs):
+    if instance._state.adding and not instance.pk:
+        return False
+    try:
+        old_image = sender.objects.get(pk=instance.pk).image
+    except sender.DoesNotExist:
+        return False
+    if (
+        old_image
+        and old_image != instance.image
+        and old_image.name != "resources/product_default.png"
+    ):
+        old_image.delete(save=False)

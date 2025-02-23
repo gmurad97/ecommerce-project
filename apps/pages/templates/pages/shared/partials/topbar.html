@@ -1,73 +1,91 @@
 {% load static %}
 
-<!-- Begin header top -->
 <nav class="header-top">
     <div class="container">
         <div class="row align-items-center justify-content-between">
             <div class="col-auto">
-                <!-- Begin header top info -->
                 <ul class="header-top-info">
+                    {% if settings.email %}
                     <li>
-                        <a href="mailto:mail@example.com">
+                        <a href="mailto:{{ settings.email }}">
+                            <i class="material-icons md-18">email</i>
                             <i class="material-icons md-18">mail_outline</i>
-                            <span>mail@example.com</span>
+                            <span>{{ settings.email }}</span>
                         </a>
                     </li>
+                    {% endif %}
+
+                    {% if settings.phone %}
                     <li>
-                        <a href="mailto:mail@example.com" class="formingHrefTel">
+                        <a href="tel:{{ settings.phone }}" class="formingHrefTel">
                             <i class="material-icons md-18">phone_in_talk</i>
-                            <span>+1-888-777-1234</span>
+                            <span>{{ settings.phone }}</span>
                         </a>
                     </li>
+                    {% endif %}
+
+
+                    {% if settings.working_time %}
                     <li>
                         <i class="material-icons material-icons-outlined md-18">schedule</i>
-                        <span>Mon - Fri: 9:00 - 18:00</span>
+                        <span>{{ settings.working_time }}</span>
                     </li>
-                </ul><!-- Ennd header top info -->
+                    {% endif %}
+
+
+
+                </ul>
+
+
+
             </div>
             <div class="col-auto">
                 <div class="header-top-links">
-                    <!-- Begin widget socials -->
+
                     <ul class="widget-socials">
+
+                        {% if settings.facebook %}
                         <li>
-                            <a href="404.html#!" title="Facebook">
+                            <a href="{{ settings.facebook }}" title="Facebook">
                                 <svg viewBox="0 0 320 512">
                                     <use xlink:href="{% static 'pages/img/sprite.svg' %}#facebook-icon"></use>
                                 </svg>
                             </a>
                         </li>
+                        {% endif %}
+
+                        {% if settings.instagram %}
                         <li>
-                            <a href="404.html#!" title="Instagram">
+                            <a href="{{ settings.instagram }}" title="Instagram">
                                 <svg viewBox="0 0 448 512">
                                     <use xlink:href="{% static 'pages/img/sprite.svg' %}#instagram-icon"></use>
                                 </svg>
                             </a>
                         </li>
+                        {% endif %}
+
+                        {% if settings.linkedin %}
                         <li>
-                            <a href="404.html#!" title="LinkedIn">
+                            <a href="{{ settings.linkedin }}" title="LinkedIn">
                                 <svg viewBox="0 0 448 512">
                                     <use xlink:href="{% static 'pages/img/sprite.svg' %}#linkedin-icon"></use>
                                 </svg>
                             </a>
                         </li>
+                        {% endif %}
+
+                        {% if settings.twitter %}
                         <li>
-                            <a href="404.html#!" title="Twitter">
+                            <a href="{{ settings.twitter }}" title="Twitter">
                                 <svg viewBox="0 0 512 512">
                                     <use xlink:href="{% static 'pages/img/sprite.svg' %}#twitter-icon"></use>
                                 </svg>
                             </a>
                         </li>
-                    </ul><!-- End widget socials -->
-                    <div class="btn-group-outer">
-                        <div class="btn-group align-items-center">
-                            <a href="404.html#header_modal" class="header-button header_modal_open">
-                                <i class="material-icons">ring_volume</i>
-                                <span>Callback</span>
-                            </a>
-                        </div>
-                    </div>
+                        {% endif %}
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-</nav><!-- End header top -->
+</nav>
