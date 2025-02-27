@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-8$ml!8fe2^4ym)=fgv(89j$j$(_cln-tlu!5ty=#e00szp%dj*"
+SECRET_KEY = "django-insecure--qtt1wl&$=fr1*mp$da3+97-ak02ir%qxl*6i0rowp$n#)u7)%"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "apps.pages.apps.PagesConfig",
+    "apps.shop.apps.ShopConfig",
 ]
 
 MIDDLEWARE = [
@@ -127,7 +127,6 @@ else:
 # https://docs.djangoproject.com/en/5.1/topics/files/
 
 MEDIA_URL = "media/"
-
 MEDIA_ROOT = BASE_DIR / "media"
 
 # Default primary key field type

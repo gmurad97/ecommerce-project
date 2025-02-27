@@ -19,11 +19,11 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
-from apps.pages.views import error_404
+from apps.shop.views import error_404
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", include("apps.pages.urls", namespace="pages")),
+    path("", include("apps.shop.urls", namespace="shop")),
 ]
 
 handler404 = error_404
