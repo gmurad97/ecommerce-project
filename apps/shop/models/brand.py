@@ -1,5 +1,5 @@
 from django.db import models
-from django.core import validators
+from django.core.validators import FileExtensionValidator
 from django.urls import reverse
 
 
@@ -8,7 +8,7 @@ class Brand(models.Model):
     slug = models.SlugField(unique=True, blank=True, null=False, verbose_name="Slug")
     logo = models.ImageField(
         upload_to="brands/",
-        validators=[validators.FileExtensionValidator(["jpg", "jpeg", "png", "svg", "gif", "webp", "bmp", "tiff"])],
+        validators=[FileExtensionValidator(["jpg", "jpeg", "png", "svg", "gif", "webp", "bmp", "tiff"])],
         blank=False,
         null=False,
         verbose_name="Logo",
@@ -22,7 +22,7 @@ class Brand(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse("brand_products", kwargs={"slug_id": self.slug})
+        return reverse("shop:brand_products", kwargs={"slug_id": self.slug})
 
     class Meta:
         verbose_name = "Brand"

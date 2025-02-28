@@ -2,21 +2,16 @@ from django.db import models
 
 
 class Setting(models.Model):
-    maintenance_mode = models.BooleanField(
-        default=False, verbose_name="Maintenance Mode"
-    )
+    maintenance_mode = models.BooleanField(default=False, verbose_name="Maintenance Mode")
     snow_mode = models.BooleanField(default=False, verbose_name="Snow Mode")
-    email = models.EmailField(
-        max_length=255, blank=True, null=True, verbose_name="Email"
-    )
+    email = models.EmailField(max_length=255, blank=True, null=True, verbose_name="Email")
     phone = models.CharField(max_length=24, blank=True, null=True, verbose_name="Phone")
+    address = models.CharField(max_length=255, blank=True, null=True, verbose_name="Address")
+    working_time = models.TextField(blank=True, null=True, verbose_name="Working Time")
     facebook = models.URLField(blank=True, null=True, verbose_name="Facebook")
     instagram = models.URLField(blank=True, null=True, verbose_name="Instagram")
-    linkedin = models.URLField(blank=True, null=True, verbose_name="Linkedin")
+    linkedin = models.URLField(blank=True, null=True, verbose_name="LinkedIn")
     twitter = models.URLField(blank=True, null=True, verbose_name="Twitter")
-    working_time = models.CharField(
-        max_length=255, blank=True, null=True, verbose_name="Working Time"
-    )
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="Created At")
     updated_at = models.DateTimeField(auto_now=True, verbose_name="Updated At")
     deleted_at = models.DateTimeField(blank=True, null=True, verbose_name="Deleted At")
@@ -25,5 +20,6 @@ class Setting(models.Model):
         return "Site Settings"
 
     class Meta:
-        verbose_name = "Setting"
+        verbose_name = "Settings"
         verbose_name_plural = "Settings"
+        ordering = ("-created_at",)

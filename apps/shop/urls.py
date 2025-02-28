@@ -17,8 +17,8 @@ urlpatterns = [
     path("categories/", views.category_list, name="category_list"),
     path("categories/<slug:slug_id>", views.category_products, name="category_products"),
 
-    # brands - home
-    # brands/adidas - products this brand
+    # product - home
+    # product/adidas - products this brand
     path("products/", views.product_list, name="product_list"),
     path("products/<slug:slug_id>", views.product_detail, name="product_detail"),
 #==============================end
