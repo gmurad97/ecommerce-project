@@ -1,0 +1,8 @@
+td,
+th {
+    vertical-align: middle !important;
+}
+
+table {
+    min-width: max-content !important;
+}

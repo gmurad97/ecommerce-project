@@ -5,12 +5,19 @@
     {% include "shop/shared/partials/head.html" %}
 </head>
 
-<body class="home-3">
+
+
+<body>
     {% include "shop/shared/partials/preloader.html" %}
-    {% include "shop/shared/partials/header.html" %}
+
+    <header class="header">
+        {% include "shop/shared/partials/topbar.html" %}
+        {% include "shop/shared/partials/middlebar.html" %}
+        {% include "shop/shared/partials/navbar.html" %}
+    </header>
 
     <main class="main">
-        {% include "shop/shared/partials/_slider.html" %}
+
 
         {% block content %}{% endblock %}
     </main>
@@ -18,6 +25,10 @@
     {% include "shop/shared/partials/footer.html" %}
     {% include "shop/shared/partials/scroll.html" %}
     {% include "shop/shared/partials/quick_view_modal.html" %}
+
+
+
+
     {% include "shop/shared/partials/scripts.html" %}
 </body>
 

@@ -53,6 +53,8 @@ class ProductAdmin(admin.ModelAdmin):
             {
                 "fields": (
                     "name",
+                    "rating",
+                    "sku",
                     "brand",
                     "category",
                     "price",

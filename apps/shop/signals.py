@@ -1,7 +1,7 @@
 from django.db.models.signals import pre_save, pre_delete
 from django.dispatch import receiver
 from django.utils.text import slugify
-from .models import Brand, Category
+from .models import Brand, Category, Product
 
 
 @receiver(pre_save, sender=Brand)
@@ -18,18 +18,11 @@ def set_slug_category(sender, instance, **kwargs):
         instance.slug = category_slug
 
 
-# @receiver(pre_save, sender=Category)
-# def set_slug_category(sender, instance, **kwargs):
-#     category_slug = slugify(instance.name)
-#     if not instance.slug or category_slug != instance.slug:
-#         instance.slug = category_slug
-
-
-# @receiver(pre_save, sender=Product)
-# def set_slug_product(sender, instance, **kwargs):
-#     product_slug = slugify(instance.name)
-#     if not instance.slug or product_slug != instance.slug:
-#         instance.slug = product_slug
+@receiver(pre_save, sender=Product)
+def set_slug_product(sender, instance, **kwargs):
+    product_slug = slugify(instance.name)
+    if not instance.slug or product_slug != instance.slug:
+        instance.slug = product_slug
 
 
 # @receiver(pre_delete, sender=Product)
