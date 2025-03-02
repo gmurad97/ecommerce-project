@@ -1,6 +1,6 @@
 from django.db import models
-from django.urls import reverse
 from django.core.validators import FileExtensionValidator
+from django.urls import reverse
 
 
 class Category(models.Model):
@@ -21,10 +21,10 @@ class Category(models.Model):
         help_text="URL-friendly unique identifier.",
     )
     image = models.ImageField(
-        upload_to="category/",
+        upload_to="category/image/",
         validators=[FileExtensionValidator(["jpg", "jpeg", "png", "svg", "gif", "webp", "bmp", "tiff"])],
-        blank=False,
-        null=False,
+        blank=True,
+        null=True,
         verbose_name="Image",
         help_text="Category logo image. Accepted formats: JPG, JPEG, PNG, SVG, GIF, WEBP, BMP, TIFF.",
     )

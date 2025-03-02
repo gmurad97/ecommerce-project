@@ -21,10 +21,10 @@ class Brand(models.Model):
         help_text="URL-friendly unique identifier.",
     )
     logo = models.ImageField(
-        upload_to="brands/",
+        upload_to="brands/logo/",
         validators=[FileExtensionValidator(["jpg", "jpeg", "png", "svg", "gif", "webp", "bmp", "tiff"])],
-        blank=False,
-        null=False,
+        blank=True,
+        null=True,
         verbose_name="Logo",
         help_text="Brand logo image. Accepted formats: JPG, JPEG, PNG, SVG, GIF, WEBP, BMP, TIFF.",
     )

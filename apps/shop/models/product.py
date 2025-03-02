@@ -123,21 +123,13 @@ class Product(models.Model):
 
     def get_absolute_url(self):
         return reverse("shop:product_detail", kwargs={"slug_id": self.slug})
-    
-    # def discount_normalize(self):
-
-    # def discount_normalize(self):
-    #     self.discount.
-    #     discount_value = Decimal(discount_value)
-
-    #     # Если есть копейки, оставляем их, иначе убираем
-    #     if discount_value % 1 == 0:
-    #         return discount_value.quantize(Decimal("1"))  # Округлить до целого числа
-    #     else:
-    #         return discount_value.quantize(Decimal("0.01"))  # Округлить до 2 знаков после запятой
 
     def discounted_price(self):
-        return self.price - (self.price * (self.discount / 100))
+        result = round(self.price - (self.price * (self.discount / 100)), 2)
+        return int(result) if result % 1 == 0 else result
+
+    def discount_formatted(self):
+        return int(self.discount) if self.discount % 1 == 0 else self.discount
 
     def has_stock(self):
         return self.stock_quantity > 0
