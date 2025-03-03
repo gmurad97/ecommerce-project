@@ -1,1630 +1,1684 @@
 {% extends "shop/shared/layouts/base.html" %}
 {% load static %}
 
-
 {% block content %}
-
-<!-- small banner -->
-<div class="small-banner pt-90 pb-70">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="banner-item">
-                    <img src="assets/img/banner/mini-banner-1.jpg" alt="">
-                    <div class="banner-content">
-                        <p>Hot Collections</p>
-                        <h3>Best Travel Sale <br> Collections</h3>
-                        <a href="index-3.html#">Discover Now</a>
+        <!-- category area -->
+        <div class="category-area2 py-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <span class="site-title-tagline">Our Category</span>
+                            <h2 class="site-title">Browse Product By <span>Category</span></h2>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="banner-item">
-                    <img src="assets/img/banner/mini-banner-2.jpg" alt="">
-                    <div class="banner-content">
-                        <p>Apple Collections</p>
-                        <h3>Apple Smart Watch <br> Collectons</h3>
-                        <a href="index-3.html#">Shop Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="banner-item">
-                    <img src="assets/img/banner/mini-banner-3.jpg" alt="">
-                    <div class="banner-content">
-                        <p>Shoe Collections</p>
-                        <h3>Summer Season <br> Shoe Up To <span>50%</span> Off</h3>
-                        <a href="index-3.html#">Discover Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- small banner end -->
-
-
-<!-- category area -->
-<div class="category-area3 pb-70">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="site-heading-inline">
-                    <h2 class="site-title"><img src="assets/img/icon/category.svg" alt="">Our Category</h2>
-                    <a href="index-3.html#">View More <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="category-item">
-                    <div class="category-img-box">
-                        <a href="index-3.html#">
-                            <div class="category-img">
-                                <div class="thumb-big">
-                                    <img src="assets/img/category/c1.png" alt="">
+                <div class="row">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="category-item">
+                            <a href="#">
+                                <div class="category-info">
+                                    <div class="icon">
+                                        <img src="{% static 'shop/img/icon/dress.svg' %}" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h4>Accessories</h4>
+                                        <p>30 Items</p>
+                                    </div>
                                 </div>
-                                <div class="thumb-list">
-                                    <div class="thumb-list-1"><img src="assets/img/category/c2.png" alt=""></div>
-                                    <div class="thumb-list-2"><img src="assets/img/category/c3.png" alt=""></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="category-item">
+                            <a href="#">
+                                <div class="category-info">
+                                    <div class="icon">
+                                        <img src="{% static 'shop/img/icon/laptop.svg' %}" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h4>Electronics</h4>
+                                        <p>25 Items</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <div class="category-img-info">
-                            <h4>Watches</h4>
-                            <p>Starting from $56.89</p>
-                            <a class="theme-btn" href="index-3.html#">View Products</a>
+                            </a>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="category-item">
-                    <div class="category-img-box">
-                        <a href="index-3.html#">
-                            <div class="category-img">
-                                <div class="thumb-big">
-                                    <img src="assets/img/category/c4.png" alt="">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="category-item">
+                            <a href="#">
+                                <div class="category-info">
+                                    <div class="icon">
+                                        <img src="{% static 'shop/img/icon/grocery.svg' %}" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h4>Grocery & Market</h4>
+                                        <p>15 Items</p>
+                                    </div>
                                 </div>
-                                <div class="thumb-list">
-                                    <div class="thumb-list-1"><img src="assets/img/category/c5.png" alt=""></div>
-                                    <div class="thumb-list-2"><img src="assets/img/category/c6.png" alt=""></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="category-item">
+                            <a href="#">
+                                <div class="category-info">
+                                    <div class="icon">
+                                        <img src="{% static 'shop/img/icon/music.svg' %}" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h4>Music & Audio</h4>
+                                        <p>05 Items</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <div class="category-img-info">
-                            <h4>Clothing</h4>
-                            <p>Starting from $56.89</p>
-                            <a class="theme-btn" href="index-3.html#">View Products</a>
+                            </a>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="category-item">
-                    <div class="category-img-box">
-                        <a href="index-3.html#">
-                            <div class="category-img">
-                                <div class="thumb-big">
-                                    <img src="assets/img/category/c7.png" alt="">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="category-item">
+                            <a href="#">
+                                <div class="category-info">
+                                    <div class="icon">
+                                        <img src="{% static 'shop/img/icon/furniture.svg' %}" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h4>Furniture</h4>
+                                        <p>30 Items</p>
+                                    </div>
                                 </div>
-                                <div class="thumb-list">
-                                    <div class="thumb-list-1"><img src="assets/img/category/c8.png" alt=""></div>
-                                    <div class="thumb-list-2"><img src="assets/img/category/c9.png" alt=""></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="category-item">
+                            <a href="#">
+                                <div class="category-info">
+                                    <div class="icon">
+                                        <img src="{% static 'shop/img/icon/toy.svg' %}" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h4>Toy & Video Games</h4>
+                                        <p>12 Items</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <div class="category-img-info">
-                            <h4>Shoes</h4>
-                            <p>Starting from $56.89</p>
-                            <a class="theme-btn" href="index-3.html#">View Products</a>
+                            </a>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="category-item">
-                    <div class="category-img-box">
-                        <a href="index-3.html#">
-                            <div class="category-img">
-                                <div class="thumb-big">
-                                    <img src="assets/img/category/c10.png" alt="">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="category-item">
+                            <a href="#">
+                                <div class="category-info">
+                                    <div class="icon">
+                                        <img src="{% static 'shop/img/icon/gifts.svg' %}" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h4>Gifts</h4>
+                                        <p>08 Items</p>
+                                    </div>
                                 </div>
-                                <div class="thumb-list">
-                                    <div class="thumb-list-1"><img src="assets/img/category/c11.png" alt=""></div>
-                                    <div class="thumb-list-2"><img src="assets/img/category/c12.png" alt=""></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="category-item">
+                            <a href="#">
+                                <div class="category-info">
+                                    <div class="icon">
+                                        <img src="{% static 'shop/img/icon/mother.svg' %}" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h4>Babies & Moms</h4>
+                                        <p>14 Items</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <div class="category-img-info">
-                            <h4>Glasses</h4>
-                            <p>Starting from $56.89</p>
-                            <a class="theme-btn" href="index-3.html#">View Products</a>
+                            </a>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="category-item">
-                    <div class="category-img-box">
-                        <a href="index-3.html#">
-                            <div class="category-img">
-                                <div class="thumb-big">
-                                    <img src="assets/img/category/c13.png" alt="">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="category-item">
+                            <a href="#">
+                                <div class="category-info">
+                                    <div class="icon">
+                                        <img src="{% static 'shop/img/icon/beauty.svg' %}" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h4>Health & Beauty</h4>
+                                        <p>19 Items</p>
+                                    </div>
                                 </div>
-                                <div class="thumb-list">
-                                    <div class="thumb-list-1"><img src="assets/img/category/c14.png" alt=""></div>
-                                    <div class="thumb-list-2"><img src="assets/img/category/c15.png" alt=""></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="category-item">
+                            <a href="#">
+                                <div class="category-info">
+                                    <div class="icon">
+                                        <img src="{% static 'shop/img/icon/sports.svg' %}" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h4>Sports & Outdoor</h4>
+                                        <p>24 Items</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <div class="category-img-info">
-                            <h4>Bagpack</h4>
-                            <p>Starting from $56.89</p>
-                            <a class="theme-btn" href="index-3.html#">View Products</a>
+                            </a>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="category-item">
-                    <div class="category-img-box">
-                        <a href="index-3.html#">
-                            <div class="category-img">
-                                <div class="thumb-big">
-                                    <img src="assets/img/category/c16.png" alt="">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="category-item">
+                            <a href="#">
+                                <div class="category-info">
+                                    <div class="icon">
+                                        <img src="{% static 'shop/img/icon/garden.svg' %}" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h4>Home & Garden</h4>
+                                        <p>09 Items</p>
+                                    </div>
                                 </div>
-                                <div class="thumb-list">
-                                    <div class="thumb-list-1"><img src="assets/img/category/c17.png" alt=""></div>
-                                    <div class="thumb-list-2"><img src="assets/img/category/c18.png" alt=""></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="category-item">
+                            <a href="#">
+                                <div class="category-info">
+                                    <div class="icon">
+                                        <img src="{% static 'shop/img/icon/automotive.svg' %}" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h4>Automotive</h4>
+                                        <p>16 Items</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <div class="category-img-info">
-                            <h4>Caps</h4>
-                            <p>Starting from $56.89</p>
-                            <a class="theme-btn" href="index-3.html#">View Products</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="category-item">
-                    <div class="category-img-box">
-                        <a href="index-3.html#">
-                            <div class="category-img">
-                                <div class="thumb-big">
-                                    <img src="assets/img/category/c22.png" alt="">
-                                </div>
-                                <div class="thumb-list">
-                                    <div class="thumb-list-1"><img src="assets/img/category/c23.png" alt=""></div>
-                                    <div class="thumb-list-2"><img src="assets/img/category/c24.png" alt=""></div>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="category-img-info">
-                            <h4>Electronics</h4>
-                            <p>Starting from $56.89</p>
-                            <a class="theme-btn" href="index-3.html#">View Products</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="category-item">
-                    <div class="category-img-box">
-                        <a href="index-3.html#">
-                            <div class="category-img">
-                                <div class="thumb-big">
-                                    <img src="assets/img/category/c19.png" alt="">
-                                </div>
-                                <div class="thumb-list">
-                                    <div class="thumb-list-1"><img src="assets/img/category/c20.png" alt=""></div>
-                                    <div class="thumb-list-2"><img src="assets/img/category/c21.png" alt=""></div>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="category-img-info">
-                            <h4>Furniture</h4>
-                            <p>Starting from $56.89</p>
-                            <a class="theme-btn" href="index-3.html#">View Products</a>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- category area end-->
-
-
-<!-- product area -->
-<div class="product-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="site-heading-inline">
-                    <h2 class="site-title"><img src="assets/img/icon/trending.svg" alt="">Trending Items</h2>
-                    <a href="index-3.html#">View More <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="product-slider item-2 owl-carousel owl-theme">
-            <div class="product-item">
-                <div class="product-img">
-                    <span class="type">Trending</span>
-                    <a href="shop-single.html"><img src="assets/img/product/p1.png" alt=""></a>
-                    <div class="product-action-wrap">
-                        <div class="product-action">
-                            <a href="index-3.html#" data-bs-toggle="modal" data-bs-target="#quickview" data-bs-placement="right" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-content">
-                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
-                    <div class="product-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <div class="product-bottom">
-                        <div class="product-price">
-                            <span>$100.00</span>
-                        </div>
-                        <button type="button" class="product-cart-btn">Add To Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product-item">
-                <div class="product-img">
-                    <span class="type hot">Hot</span>
-                    <a href="shop-single.html"><img src="assets/img/product/p2.png" alt=""></a>
-                    <div class="product-action-wrap">
-                        <div class="product-action">
-                            <a href="index-3.html#" data-bs-toggle="modal" data-bs-target="#quickview" data-bs-placement="right" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-content">
-                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
-                    <div class="product-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <div class="product-bottom">
-                        <div class="product-price">
-                            <span>$100.00</span>
-                        </div>
-                        <button type="button" class="product-cart-btn">Add To Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product-item">
-                <div class="product-img">
-                    <span class="type oos">Out Of Stock</span>
-                    <a href="shop-single.html"><img src="assets/img/product/p3.png" alt=""></a>
-                    <div class="product-action-wrap">
-                        <div class="product-action">
-                            <a href="index-3.html#" data-bs-toggle="modal" data-bs-target="#quickview" data-bs-placement="right" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-content">
-                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
-                    <div class="product-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <div class="product-bottom">
-                        <div class="product-price">
-                            <span>$100.00</span>
-                        </div>
-                        <button type="button" class="product-cart-btn">Add To Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product-item">
-                <div class="product-img">
-                    <a href="shop-single.html"><img src="assets/img/product/p4.png" alt=""></a>
-                    <div class="product-action-wrap">
-                        <div class="product-action">
-                            <a href="index-3.html#" data-bs-toggle="modal" data-bs-target="#quickview" data-bs-placement="right" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-content">
-                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
-                    <div class="product-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <div class="product-bottom">
-                        <div class="product-price">
-                            <span>$100.00</span>
-                        </div>
-                        <button type="button" class="product-cart-btn">Add To Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product-item">
-                <div class="product-img">
-                    <span class="type discount">10% Off</span>
-                    <a href="shop-single.html"><img src="assets/img/product/p5.png" alt=""></a>
-                    <div class="product-action-wrap">
-                        <div class="product-action">
-                            <a href="index-3.html#" data-bs-toggle="modal" data-bs-target="#quickview" data-bs-placement="right" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-content">
-                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
-                    <div class="product-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <div class="product-bottom">
-                        <div class="product-price">
-                            <del>120.00</del><span>$100.00</span>
-                        </div>
-                        <button type="button" class="product-cart-btn">Add To Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product-item">
-                <div class="product-img">
-                    <a href="shop-single.html"><img src="assets/img/product/p6.png" alt=""></a>
-                    <div class="product-action-wrap">
-                        <div class="product-action">
-                            <a href="index-3.html#" data-bs-toggle="modal" data-bs-target="#quickview" data-bs-placement="right" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-content">
-                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
-                    <div class="product-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <div class="product-bottom">
-                        <div class="product-price">
-                            <span>$100.00</span>
-                        </div>
-                        <button type="button" class="product-cart-btn">Add To Cart</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- product area end -->
-
-
-<!-- mid banner -->
-<div class="mid-banner pt-100 pb-60">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <div class="banner-item">
-                    <img src="assets/img/banner/mid-banner-1.jpg" alt="">
-                    <div class="banner-content">
-                        <p>Top Collections</p>
-                        <h3>Women's Fashion Up <br> To <span>40%</span> Off</h3>
-                        <a href="index-3.html#" class="theme-btn">Shop Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <div class="banner-item">
-                    <img src="assets/img/banner/mid-banner-2.jpg" alt="">
-                    <div class="banner-content">
-                        <p>Headphone Sale</p>
-                        <h3>Headphone Sale Up <br> To <span>50%</span> Off</h3>
-                        <a href="index-3.html#" class="theme-btn">Shop Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- mid banner end -->
-
-
-<!-- hot item -->
-<div class="product-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="site-heading-inline">
-                    <h2 class="site-title"><img src="assets/img/icon/hot.svg" alt="">Hot Items</h2>
-                    <a href="index-3.html#">View More <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="product-slider item-2 owl-carousel owl-theme">
-            <div class="product-item">
-                <div class="product-img">
-                    <span class="type">Trending</span>
-                    <a href="shop-single.html"><img src="assets/img/product/p50.png" alt=""></a>
-                    <div class="product-action-wrap">
-                        <div class="product-action">
-                            <a href="index-3.html#" data-bs-toggle="modal" data-bs-target="#quickview" data-bs-placement="right" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-content">
-                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
-                    <div class="product-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <div class="product-bottom">
-                        <div class="product-price">
-                            <span>$100.00</span>
-                        </div>
-                        <button type="button" class="product-cart-btn">Add To Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product-item">
-                <div class="product-img">
-                    <span class="type hot">Hot</span>
-                    <a href="shop-single.html"><img src="assets/img/product/p13.png" alt=""></a>
-                    <div class="product-action-wrap">
-                        <div class="product-action">
-                            <a href="index-3.html#" data-bs-toggle="modal" data-bs-target="#quickview" data-bs-placement="right" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-content">
-                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
-                    <div class="product-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <div class="product-bottom">
-                        <div class="product-price">
-                            <span>$100.00</span>
-                        </div>
-                        <button type="button" class="product-cart-btn">Add To Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product-item">
-                <div class="product-img">
-                    <span class="type oos">Out Of Stock</span>
-                    <a href="shop-single.html"><img src="assets/img/product/p28.png" alt=""></a>
-                    <div class="product-action-wrap">
-                        <div class="product-action">
-                            <a href="index-3.html#" data-bs-toggle="modal" data-bs-target="#quickview" data-bs-placement="right" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-content">
-                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
-                    <div class="product-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <div class="product-bottom">
-                        <div class="product-price">
-                            <span>$100.00</span>
-                        </div>
-                        <button type="button" class="product-cart-btn">Add To Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product-item">
-                <div class="product-img">
-                    <a href="shop-single.html"><img src="assets/img/product/p44.png" alt=""></a>
-                    <div class="product-action-wrap">
-                        <div class="product-action">
-                            <a href="index-3.html#" data-bs-toggle="modal" data-bs-target="#quickview" data-bs-placement="right" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-content">
-                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
-                    <div class="product-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <div class="product-bottom">
-                        <div class="product-price">
-                            <span>$100.00</span>
-                        </div>
-                        <button type="button" class="product-cart-btn">Add To Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product-item">
-                <div class="product-img">
-                    <span class="type discount">10% Off</span>
-                    <a href="shop-single.html"><img src="assets/img/product/p37.png" alt=""></a>
-                    <div class="product-action-wrap">
-                        <div class="product-action">
-                            <a href="index-3.html#" data-bs-toggle="modal" data-bs-target="#quickview" data-bs-placement="right" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-content">
-                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
-                    <div class="product-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <div class="product-bottom">
-                        <div class="product-price">
-                            <del>120.00</del><span>$100.00</span>
-                        </div>
-                        <button type="button" class="product-cart-btn">Add To Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product-item">
-                <div class="product-img">
-                    <a href="shop-single.html"><img src="assets/img/product/p54.png" alt=""></a>
-                    <div class="product-action-wrap">
-                        <div class="product-action">
-                            <a href="index-3.html#" data-bs-toggle="modal" data-bs-target="#quickview" data-bs-placement="right" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-content">
-                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
-                    <div class="product-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <div class="product-bottom">
-                        <div class="product-price">
-                            <span>$100.00</span>
-                        </div>
-                        <button type="button" class="product-cart-btn">Add To Cart</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- hot item end -->
-
-
-<!-- new arrival -->
-<div class="product-area py-90">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="site-heading-inline">
-                    <h2 class="site-title"><img src="assets/img/icon/new.svg" alt="">New Arrivals</h2>
-                    <a href="index-3.html#">View More <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="product-slider item-2 owl-carousel owl-theme">
-            <div class="product-item">
-                <div class="product-img">
-                    <span class="type">Trending</span>
-                    <a href="shop-single.html"><img src="assets/img/product/p58.png" alt=""></a>
-                    <div class="product-action-wrap">
-                        <div class="product-action">
-                            <a href="index-3.html#" data-bs-toggle="modal" data-bs-target="#quickview" data-bs-placement="right" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-content">
-                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
-                    <div class="product-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <div class="product-bottom">
-                        <div class="product-price">
-                            <span>$100.00</span>
-                        </div>
-                        <button type="button" class="product-cart-btn">Add To Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product-item">
-                <div class="product-img">
-                    <span class="type hot">Hot</span>
-                    <a href="shop-single.html"><img src="assets/img/product/p55.png" alt=""></a>
-                    <div class="product-action-wrap">
-                        <div class="product-action">
-                            <a href="index-3.html#" data-bs-toggle="modal" data-bs-target="#quickview" data-bs-placement="right" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-content">
-                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
-                    <div class="product-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <div class="product-bottom">
-                        <div class="product-price">
-                            <span>$100.00</span>
-                        </div>
-                        <button type="button" class="product-cart-btn">Add To Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product-item">
-                <div class="product-img">
-                    <span class="type oos">Out Of Stock</span>
-                    <a href="shop-single.html"><img src="assets/img/product/p50.png" alt=""></a>
-                    <div class="product-action-wrap">
-                        <div class="product-action">
-                            <a href="index-3.html#" data-bs-toggle="modal" data-bs-target="#quickview" data-bs-placement="right" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-content">
-                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
-                    <div class="product-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <div class="product-bottom">
-                        <div class="product-price">
-                            <span>$100.00</span>
-                        </div>
-                        <button type="button" class="product-cart-btn">Add To Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product-item">
-                <div class="product-img">
-                    <a href="shop-single.html"><img src="assets/img/product/p33.png" alt=""></a>
-                    <div class="product-action-wrap">
-                        <div class="product-action">
-                            <a href="index-3.html#" data-bs-toggle="modal" data-bs-target="#quickview" data-bs-placement="right" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-content">
-                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
-                    <div class="product-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <div class="product-bottom">
-                        <div class="product-price">
-                            <span>$100.00</span>
-                        </div>
-                        <button type="button" class="product-cart-btn">Add To Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product-item">
-                <div class="product-img">
-                    <span class="type discount">10% Off</span>
-                    <a href="shop-single.html"><img src="assets/img/product/p57.png" alt=""></a>
-                    <div class="product-action-wrap">
-                        <div class="product-action">
-                            <a href="index-3.html#" data-bs-toggle="modal" data-bs-target="#quickview" data-bs-placement="right" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-content">
-                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
-                    <div class="product-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <div class="product-bottom">
-                        <div class="product-price">
-                            <del>120.00</del><span>$100.00</span>
-                        </div>
-                        <button type="button" class="product-cart-btn">Add To Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product-item">
-                <div class="product-img">
-                    <a href="shop-single.html"><img src="assets/img/product/p8.png" alt=""></a>
-                    <div class="product-action-wrap">
-                        <div class="product-action">
-                            <a href="index-3.html#" data-bs-toggle="modal" data-bs-target="#quickview" data-bs-placement="right" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
-                            <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-content">
-                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
-                    <div class="product-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <div class="product-bottom">
-                        <div class="product-price">
-                            <span>$100.00</span>
-                        </div>
-                        <button type="button" class="product-cart-btn">Add To Cart</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- new arrival end -->
-
-
-<!-- big banner -->
-<div class="big-banner">
-    <div class="container">
-        <div class="banner-wrap" style="background-image: url(assets/img/banner/big-banner.jpg);">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div class="banner-content">
-                        <div class="banner-info">
-                            <h6>Mega Collections</h6>
-                            <h2>Huge Sale Up To <span>40%</span> Off</h2>
-                            <p>at our outlet stores</p>
-                        </div>
-                        <a href="index-3.html#" class="theme-btn">Shop Now<i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- big banner end -->
-
-
-<!-- brand product -->
-<div class="product-area py-80">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="site-heading-inline">
-                    <h2 class="site-title"><img src="assets/img/icon/more.svg" alt="">Mobile Phones</h2>
-                    <a href="index-3.html#">View More <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="row item-2">
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="product-item">
-                    <div class="product-img">
-                        <span class="type">Trending</span>
-                        <a href="shop-single.html"><img src="assets/img/product/p15.png" alt=""></a>
-                        <div class="product-action-wrap">
-                            <div class="product-action">
-                                <a href="index-3.html#" data-bs-toggle="modal" data-bs-target="#quickview" data-bs-placement="right" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
-                                <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
-                                <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-content">
-                        <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
-                        <div class="product-rate">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <div class="product-bottom">
-                            <div class="product-price">
-                                <span>$100.00</span>
-                            </div>
-                            <button type="button" class="product-cart-btn">Add To Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="product-item">
-                    <div class="product-img">
-                        <a href="shop-single.html"><img src="assets/img/product/p16.png" alt=""></a>
-                        <div class="product-action-wrap">
-                            <div class="product-action">
-                                <a href="index-3.html#" data-bs-toggle="modal" data-bs-target="#quickview" data-bs-placement="right" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
-                                <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
-                                <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-content">
-                        <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
-                        <div class="product-rate">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <div class="product-bottom">
-                            <div class="product-price">
-                                <span>$100.00</span>
-                            </div>
-                            <button type="button" class="product-cart-btn">Add To Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="product-item">
-                    <div class="product-img">
-                        <a href="shop-single.html"><img src="assets/img/product/p17.png" alt=""></a>
-                        <div class="product-action-wrap">
-                            <div class="product-action">
-                                <a href="index-3.html#" data-bs-toggle="modal" data-bs-target="#quickview" data-bs-placement="right" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
-                                <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
-                                <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-content">
-                        <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
-                        <div class="product-rate">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <div class="product-bottom">
-                            <div class="product-price">
-                                <span>$100.00</span>
-                            </div>
-                            <button type="button" class="product-cart-btn">Add To Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="product-item">
-                    <div class="product-img">
-                        <span class="type new">New</span>
-                        <a href="shop-single.html"><img src="assets/img/product/p18.png" alt=""></a>
-                        <div class="product-action-wrap">
-                            <div class="product-action">
-                                <a href="index-3.html#" data-bs-toggle="modal" data-bs-target="#quickview" data-bs-placement="right" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
-                                <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
-                                <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-content">
-                        <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
-                        <div class="product-rate">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <div class="product-bottom">
-                            <div class="product-price">
-                                <span>$100.00</span>
-                            </div>
-                            <button type="button" class="product-cart-btn">Add To Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="product-item">
-                    <div class="product-img">
-                        <a href="shop-single.html"><img src="assets/img/product/p21.png" alt=""></a>
-                        <div class="product-action-wrap">
-                            <div class="product-action">
-                                <a href="index-3.html#" data-bs-toggle="modal" data-bs-target="#quickview" data-bs-placement="right" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
-                                <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
-                                <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-content">
-                        <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
-                        <div class="product-rate">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <div class="product-bottom">
-                            <div class="product-price">
-                                <span>$100.00</span>
-                            </div>
-                            <button type="button" class="product-cart-btn">Add To Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="product-item">
-                    <div class="product-img">
-                        <a href="shop-single.html"><img src="assets/img/product/p22.png" alt=""></a>
-                        <div class="product-action-wrap">
-                            <div class="product-action">
-                                <a href="index-3.html#" data-bs-toggle="modal" data-bs-target="#quickview" data-bs-placement="right" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
-                                <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
-                                <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-content">
-                        <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
-                        <div class="product-rate">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <div class="product-bottom">
-                            <div class="product-price">
-                                <span>$100.00</span>
-                            </div>
-                            <button type="button" class="product-cart-btn">Add To Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="product-item">
-                    <div class="product-img">
-                        <span class="type hot">Hot</span>
-                        <a href="shop-single.html"><img src="assets/img/product/p23.png" alt=""></a>
-                        <div class="product-action-wrap">
-                            <div class="product-action">
-                                <a href="index-3.html#" data-bs-toggle="modal" data-bs-target="#quickview" data-bs-placement="right" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
-                                <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
-                                <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-content">
-                        <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
-                        <div class="product-rate">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <div class="product-bottom">
-                            <div class="product-price">
-                                <span>$100.00</span>
-                            </div>
-                            <button type="button" class="product-cart-btn">Add To Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="product-item">
-                    <div class="product-img">
-                        <a href="shop-single.html"><img src="assets/img/product/p24.png" alt=""></a>
-                        <div class="product-action-wrap">
-                            <div class="product-action">
-                                <a href="index-3.html#" data-bs-toggle="modal" data-bs-target="#quickview" data-bs-placement="right" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
-                                <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
-                                <a href="index-3.html#" data-bs-placement="right" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-content">
-                        <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
-                        <div class="product-rate">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <div class="product-bottom">
-                            <div class="product-price">
-                                <span>$100.00</span>
-                            </div>
-                            <button type="button" class="product-cart-btn">Add To Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- brand product end -->
-
-
-<!-- deal area -->
-<div class="deal-area">
-    <div class="container-fluid p-0">
-        <div class="row g-0">
-            <div class="col-12 col-lg-6">
-                <div class="deal-img">
-                    <img src="assets/img/deal/01.jpg" alt="#">
-                </div>
-            </div>
-            <div class="col-12 col-lg-6 align-self-center">
-                <div class="deal-content">
-                    <span class="deal-sub-title">Todays Deal 20% Off</span>
-                    <h3 class="deal-title">Summer Beach Bag With Elegant Women's Accessories.</h3>
-                    <p class="deal-text">There are many variations of passages available but the majority have suffered alteration in some form words look even slightly believable.</p>
-                    <h3 class="deal-price"><span>$1020</span><del>$1200</del></h3>
-                    <div class="col-lg-9">
-                        <div class="deal-countdown">
-                            <div class="countdown" data-countdown="2030/12/30"></div>
-                        </div>
-                    </div>
-                    <div class="deal-btn">
-                        <a href="index-3.html#" class="theme-btn">Buy Now<i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- deal area end  -->
-
-
-<!-- best seller -->
-<div class="seller-area py-90">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="site-heading-inline">
-                    <h2 class="site-title"><img src="assets/img/icon/best-seller.svg" alt="">Best Sellers</h2>
-                    <a href="index-3.html#">View More <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="seller-item">
-                    <div class="seller-img">
-                        <a href="index-3.html#"><img src="assets/img/seller/01.png" alt=""></a>
-                    </div>
-                    <a href="index-3.html#" class="seller-title">Fast Shop</a>
-                </div>
-            </div>
-            <div class="col">
-                <div class="seller-item">
-                    <div class="seller-img">
-                        <a href="index-3.html#"><img src="assets/img/seller/02.png" alt=""></a>
-                    </div>
-                    <a href="index-3.html#" class="seller-title">Borcelle Shop</a>
-                </div>
-            </div>
-            <div class="col">
-                <div class="seller-item">
-                    <div class="seller-img">
-                        <a href="index-3.html#"><img src="assets/img/seller/03.png" alt=""></a>
-                    </div>
-                    <a href="index-3.html#" class="seller-title">Fradel Shop</a>
-                </div>
-            </div>
-            <div class="col">
-                <div class="seller-item">
-                    <div class="seller-img">
-                        <a href="index-3.html#"><img src="assets/img/seller/04.png" alt=""></a>
-                    </div>
-                    <a href="index-3.html#" class="seller-title">Liceria Shop</a>
-                </div>
-            </div>
-            <div class="col">
-                <div class="seller-item">
-                    <div class="seller-img">
-                        <a href="index-3.html#"><img src="assets/img/seller/05.png" alt=""></a>
-                    </div>
-                    <a href="index-3.html#" class="seller-title">Fashion Shop</a>
-                </div>
-            </div>
-            <div class="col">
-                <div class="seller-item">
-                    <div class="seller-img">
-                        <a href="index-3.html#"><img src="assets/img/seller/06.png" alt=""></a>
-                    </div>
-                    <a href="index-3.html#" class="seller-title">Quick Shop</a>
-                </div>
-            </div>
-            <div class="col">
-                <div class="seller-item">
-                    <div class="seller-img">
-                        <a href="index-3.html#"><img src="assets/img/seller/07.png" alt=""></a>
-                    </div>
-                    <a href="index-3.html#" class="seller-title">Sebastin Shop</a>
-                </div>
-            </div>
-            <div class="col">
-                <div class="seller-item">
-                    <div class="seller-img">
-                        <a href="index-3.html#"><img src="assets/img/seller/08.png" alt=""></a>
-                    </div>
-                    <a href="index-3.html#" class="seller-title">Jiorox Shop</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- best seller end -->
-
-
-<!-- feature area -->
-<div class="feature-area pt-50 pb-50">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fal fa-truck"></i>
-                    </div>
-                    <div class="feature-content">
-                        <h4>Free Delivery</h4>
-                        <p>Orders Over $120</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fal fa-sync"></i>
-                    </div>
-                    <div class="feature-content">
-                        <h4>Get Refund</h4>
-                        <p>Within 30 Days Returns</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fal fa-wallet"></i>
-                    </div>
-                    <div class="feature-content">
-                        <h4>Safe Payment</h4>
-                        <p>100% Secure Payment</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fal fa-headset"></i>
-                    </div>
-                    <div class="feature-content">
-                        <h4>24/7 Support</h4>
-                        <p>Feel Free To Call Us</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- feature area end -->
-
-
-<!-- product list -->
-<div class="product-list pt-90 pb-60">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="product-list-box">
-                    <h2 class="product-list-title">On sale</h2>
-                    <div class="product-list-item">
-                        <div class="product-list-img">
-                            <a href="shop-single.html"><img src="assets/img/product/p39.png" alt="#"></a>
-                        </div>
-                        <div class="product-list-content">
-                            <h4><a href="shop-single.html">Awesome Police Eyeglass</a></h4>
-                            <div class="product-list-rate">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <div class="product-list-price">
-                                <del>60.00</del><span>$40.00</span>
-                            </div>
-                        </div>
-                        <a href="index-3.html#" class="product-list-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart"><i class="far fa-shopping-bag"></i></a>
-                    </div>
-                    <div class="product-list-item">
-                        <div class="product-list-img">
-                            <a href="shop-single.html"><img src="assets/img/product/p2.png" alt="#"></a>
-                        </div>
-                        <div class="product-list-content">
-                            <h4><a href="shop-single.html">Awesome Police Eyeglass</a></h4>
-                            <div class="product-list-rate">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <div class="product-list-price">
-                                <del>60.00</del><span>$40.00</span>
-                            </div>
-                        </div>
-                        <a href="index-3.html#" class="product-list-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart"><i class="far fa-shopping-bag"></i></a>
-                    </div>
-                    <div class="product-list-item">
-                        <div class="product-list-img">
-                            <a href="shop-single.html"><img src="assets/img/product/p3.png" alt="#"></a>
-                        </div>
-                        <div class="product-list-content">
-                            <h4><a href="shop-single.html">Awesome Police Eyeglass</a></h4>
-                            <div class="product-list-rate">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <div class="product-list-price">
-                                <del>60.00</del><span>$40.00</span>
-                            </div>
-                        </div>
-                        <a href="index-3.html#" class="product-list-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart"><i class="far fa-shopping-bag"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="product-list-box">
-                    <h2 class="product-list-title">Best Seller</h2>
-                    <div class="product-list-item">
-                        <div class="product-list-img">
-                            <a href="shop-single.html"><img src="assets/img/product/p4.png" alt="#"></a>
-                        </div>
-                        <div class="product-list-content">
-                            <h4><a href="shop-single.html">Awesome Police Eyeglass</a></h4>
-                            <div class="product-list-rate">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <div class="product-list-price">
-                                <del>60.00</del><span>$40.00</span>
-                            </div>
-                        </div>
-                        <a href="index-3.html#" class="product-list-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart"><i class="far fa-shopping-bag"></i></a>
-                    </div>
-                    <div class="product-list-item">
-                        <div class="product-list-img">
-                            <a href="shop-single.html"><img src="assets/img/product/p5.png" alt="#"></a>
-                        </div>
-                        <div class="product-list-content">
-                            <h4><a href="shop-single.html">Awesome Police Eyeglass</a></h4>
-                            <div class="product-list-rate">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <div class="product-list-price">
-                                <del>60.00</del><span>$40.00</span>
-                            </div>
-                        </div>
-                        <a href="index-3.html#" class="product-list-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart"><i class="far fa-shopping-bag"></i></a>
-                    </div>
-                    <div class="product-list-item">
-                        <div class="product-list-img">
-                            <a href="shop-single.html"><img src="assets/img/product/p6.png" alt="#"></a>
-                        </div>
-                        <div class="product-list-content">
-                            <h4><a href="shop-single.html">Awesome Police Eyeglass</a></h4>
-                            <div class="product-list-rate">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <div class="product-list-price">
-                                <del>60.00</del><span>$40.00</span>
-                            </div>
-                        </div>
-                        <a href="index-3.html#" class="product-list-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart"><i class="far fa-shopping-bag"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="product-list-box">
-                    <h2 class="product-list-title">Top Rated</h2>
-                    <div class="product-list-item">
-                        <div class="product-list-img">
-                            <a href="shop-single.html"><img src="assets/img/product/p7.png" alt="#"></a>
-                        </div>
-                        <div class="product-list-content">
-                            <h4><a href="shop-single.html">Awesome Police Eyeglass</a></h4>
-                            <div class="product-list-rate">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <div class="product-list-price">
-                                <del>60.00</del><span>$40.00</span>
-                            </div>
-                        </div>
-                        <a href="index-3.html#" class="product-list-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart"><i class="far fa-shopping-bag"></i></a>
-                    </div>
-                    <div class="product-list-item">
-                        <div class="product-list-img">
-                            <a href="shop-single.html"><img src="assets/img/product/p8.png" alt="#"></a>
-                        </div>
-                        <div class="product-list-content">
-                            <h4><a href="shop-single.html">Awesome Police Eyeglass</a></h4>
-                            <div class="product-list-rate">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <div class="product-list-price">
-                                <del>60.00</del><span>$40.00</span>
-                            </div>
-                        </div>
-                        <a href="index-3.html#" class="product-list-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart"><i class="far fa-shopping-bag"></i></a>
-                    </div>
-                    <div class="product-list-item">
-                        <div class="product-list-img">
-                            <a href="shop-single.html"><img src="assets/img/product/p26.png" alt="#"></a>
-                        </div>
-                        <div class="product-list-content">
-                            <h4><a href="shop-single.html">Awesome Police Eyeglass</a></h4>
-                            <div class="product-list-rate">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <div class="product-list-price">
-                                <del>60.00</del><span>$40.00</span>
-                            </div>
-                        </div>
-                        <a href="index-3.html#" class="product-list-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart"><i class="far fa-shopping-bag"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- product list end -->
-
+        <!-- category area end-->
 
 <!-- brand area -->
-<div class="brand-area">
+<div class="brand-area py-100">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="site-heading-inline">
-                    <h2 class="site-title"><img src="assets/img/icon/brand.svg" alt="">Popular Brands</h2>
-                    <a href="index-3.html#">All Brands <i class="fas fa-arrow-right"></i></a>
+                    <h2 class="site-title"><img src="{% static 'shop/img/icon/brand.svg' %}" alt="">Popular Brands</h2>
                 </div>
             </div>
         </div>
-        <div class="brand-slider owl-carousel owl-theme">
-            <div class="brand-item">
-                <img src="assets/img/brand/01.png" alt="">
+        <div class="row">
+            <div class="col-md-6 col-lg-2">
+                <div class="brand-item">
+                    <img src="{% static 'shop/img/brand/01.png' %}" alt="">
+                </div>
             </div>
-            <div class="brand-item">
-                <img src="assets/img/brand/02.png" alt="">
+            <div class="col-md-6 col-lg-2">
+                <div class="brand-item">
+                    <img src="{% static 'shop/img/brand/02.png' %}" alt="">
+                </div>
             </div>
-            <div class="brand-item">
-                <img src="assets/img/brand/03.png" alt="">
+            <div class="col-md-6 col-lg-2">
+                <div class="brand-item">
+                    <img src="{% static 'shop/img/brand/03.png' %}" alt="">
+                </div>
             </div>
-            <div class="brand-item">
-                <img src="assets/img/brand/04.png" alt="">
+            <div class="col-md-6 col-lg-2">
+                <div class="brand-item">
+                <img src="{% static 'shop/img/brand/04.png' %}" alt="">
             </div>
-            <div class="brand-item">
-                <img src="assets/img/brand/05.png" alt="">
             </div>
-            <div class="brand-item">
-                <img src="assets/img/brand/06.png" alt="">
+            <div class="col-md-6 col-lg-2">
+                <div class="brand-item">
+                    <img src="{% static 'shop/img/brand/04.png' %}" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-2">
+                <div class="brand-item">
+                    <img src="{% static 'shop/img/brand/05.png' %}" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-2">
+                <div class="brand-item">
+                    <img src="{% static 'shop/img/brand/06.png' %}" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-2">
+                <div class="brand-item">
+                    <img src="{% static 'shop/img/brand/06.png' %}" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-2">
+                <div class="brand-item">
+                    <img src="{% static 'shop/img/brand/05.png' %}" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-2">
+                <div class="brand-item">
+                    <img src="{% static 'shop/img/brand/04.png' %}" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-2">
+                <div class="brand-item">
+                    <img src="{% static 'shop/img/brand/03.png' %}" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-2">
+                <div class="brand-item">
+                    <img src="{% static 'shop/img/brand/02.png' %}" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-2">
+                <div class="brand-item">
+                    <img src="{% static 'shop/img/brand/01.png' %}" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-2">
+                <div class="brand-item">
+                    <img src="{% static 'shop/img/brand/02.png' %}" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-2">
+                <div class="brand-item">
+                    <img src="{% static 'shop/img/brand/03.png' %}" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-2">
+                <div class="brand-item">
+                    <img src="{% static 'shop/img/brand/04.png' %}" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-2">
+                <div class="brand-item">
+                    <img src="{% static 'shop/img/brand/05.png' %}" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-2">
+                <div class="brand-item">
+                    <a href="">
+                        <img src="{% static 'shop/img/brand/06.png' %}" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="text-center mt-4">
+                    <a href="#" class="theme-btn"><span class="fas fa-arrow-rotate-left"></span> Load More</a>
+                </div>
             </div>
         </div>
     </div>
 </div>
 <!-- brand area end -->
 
-
-<!-- blog area -->
-<div class="blog-area py-90">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 mx-auto">
-                <div class="site-heading text-center">
-                    <span class="site-title-tagline">Our Blog</span>
-                    <h2 class="site-title">Latest News & <span>Blog</span></h2>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-lg-4">
+            <div class="product-item">
+                <div class="product-img">
+                    <span class="type hot">Hot</span>
+                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p2.png' %}" alt=""></a>
+                    <div class="product-action-wrap">
+                        <div class="product-action">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                    <div class="product-rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="product-bottom">
+                        <div class="product-price">
+                            <span>$100.00</span>
+                        </div>
+                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                            <i class="far fa-shopping-bag"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="product-item">
+                <div class="product-img">
+                    <span class="type hot">Hot</span>
+                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p2.png' %}" alt=""></a>
+                    <div class="product-action-wrap">
+                        <div class="product-action">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                    <div class="product-rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="product-bottom">
+                        <div class="product-price">
+                            <span>$100.00</span>
+                        </div>
+                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                            <i class="far fa-shopping-bag"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="product-item">
+                <div class="product-img">
+                    <span class="type hot">Hot</span>
+                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p2.png' %}" alt=""></a>
+                    <div class="product-action-wrap">
+                        <div class="product-action">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                    <div class="product-rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="product-bottom">
+                        <div class="product-price">
+                            <span>$100.00</span>
+                        </div>
+                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                            <i class="far fa-shopping-bag"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="product-item">
+                <div class="product-img">
+                    <span class="type hot">Hot</span>
+                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p2.png' %}" alt=""></a>
+                    <div class="product-action-wrap">
+                        <div class="product-action">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                    <div class="product-rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="product-bottom">
+                        <div class="product-price">
+                            <span>$100.00</span>
+                        </div>
+                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                            <i class="far fa-shopping-bag"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="product-item">
+                <div class="product-img">
+                    <span class="type hot">Hot</span>
+                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p2.png' %}" alt=""></a>
+                    <div class="product-action-wrap">
+                        <div class="product-action">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                    <div class="product-rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="product-bottom">
+                        <div class="product-price">
+                            <span>$100.00</span>
+                        </div>
+                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                            <i class="far fa-shopping-bag"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="product-item">
+                <div class="product-img">
+                    <span class="type hot">Hot</span>
+                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p2.png' %}" alt=""></a>
+                    <div class="product-action-wrap">
+                        <div class="product-action">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                    <div class="product-rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="product-bottom">
+                        <div class="product-price">
+                            <span>$100.00</span>
+                        </div>
+                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                            <i class="far fa-shopping-bag"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="product-item">
+                <div class="product-img">
+                    <span class="type hot">Hot</span>
+                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p2.png' %}" alt=""></a>
+                    <div class="product-action-wrap">
+                        <div class="product-action">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                    <div class="product-rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="product-bottom">
+                        <div class="product-price">
+                            <span>$100.00</span>
+                        </div>
+                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                            <i class="far fa-shopping-bag"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="product-item">
+                <div class="product-img">
+                    <span class="type hot">Hot</span>
+                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p2.png' %}" alt=""></a>
+                    <div class="product-action-wrap">
+                        <div class="product-action">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                    <div class="product-rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="product-bottom">
+                        <div class="product-price">
+                            <span>$100.00</span>
+                        </div>
+                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                            <i class="far fa-shopping-bag"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="product-item">
+                <div class="product-img">
+                    <span class="type hot">Hot</span>
+                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p2.png' %}" alt=""></a>
+                    <div class="product-action-wrap">
+                        <div class="product-action">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                    <div class="product-rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="product-bottom">
+                        <div class="product-price">
+                            <span>$100.00</span>
+                        </div>
+                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                            <i class="far fa-shopping-bag"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="product-item">
+                <div class="product-img">
+                    <span class="type hot">Hot</span>
+                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p2.png' %}" alt=""></a>
+                    <div class="product-action-wrap">
+                        <div class="product-action">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                    <div class="product-rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="product-bottom">
+                        <div class="product-price">
+                            <span>$100.00</span>
+                        </div>
+                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                            <i class="far fa-shopping-bag"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<!-- shop-area -->
+<div class="shop-area py-100">
+    <div class="container">
         <div class="row">
-            <div class="col-md-6 col-lg-4">
-                <div class="blog-item wow fadeInUp" data-wow-delay=".25s">
-                    <div class="blog-item-img">
-                        <img src="assets/img/blog/01.jpg" alt="Thumb">
-                    </div>
-                    <div class="blog-item-info">
-                        <div class="blog-item-meta">
-                            <ul>
-                                <li><a href="index-3.html#"><i class="far fa-user-circle"></i> By Alicia Davis</a></li>
-                                <li><a href="index-3.html#"><i class="far fa-calendar-alt"></i> January 29, 2024</a></li>
-                            </ul>
+            <div class="col-lg-3">
+                <div class="shop-sidebar">
+                    <div class="shop-widget">
+                        <div class="shop-search-form">
+                            <h4 class="shop-widget-title">Search</h4>
+                            <form action="#">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <button type="search"><i class="far fa-search"></i></button>
+                                </div>
+                            </form>
                         </div>
-                        <h4 class="blog-title">
-                            <a href="index-3.html#">There are many variations of passage available majority suffered.</a>
-                        </h4>
-                        <p>There are many variations available the majority have suffered alteration randomised words.</p>
-                        <a class="theme-btn" href="index-3.html#">Read More<i class="fas fa-arrow-right-long"></i></a>
+                    </div>
+                    <div class="shop-widget">
+                        <h4 class="shop-widget-title">Category</h4>
+                        <ul class="shop-category-list">
+                            <li><a href="#">Accessories<span>(15)</span></a></li>
+                            <li><a href="#">Fashion<span>(15)</span></a></li>
+                            <li><a href="#">Home & Furniture<span>(15)</span></a></li>
+                            <li><a href="#">Electronics <span>(15)</span></a></li>
+                            <li><a href="#">Grocery & Market<span>(15)</span></a></li>
+                            <li><a href="#">Toy & Video Games<span>(15)</span></a></li>
+                            <li><a href="#">Babies & Moms<span>(15)</span></a></li>
+                            <li><a href="#">Sports & Outdoor<span>(15)</span></a></li>
+                            <li><a href="#">Home & Garden<span>(15)</span></a></li>
+                            <li><a href="#">Music & Audio<span>(15)</span></a></li>
+                            <li><a href="#">Others<span>(25)</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="shop-widget">
+                        <h4 class="shop-widget-title">Brands</h4>
+                        <ul class="shop-checkbox-list">
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="brand1">
+                                    <label class="form-check-label" for="brand1">Apple<span>(12)</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="brand2">
+                                    <label class="form-check-label" for="brand2">Adidas<span>(15)</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="brand3">
+                                    <label class="form-check-label" for="brand3">Bosilox Inc<span>(20)</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="brand4">
+                                    <label class="form-check-label" for="brand4">Converse<span>(05)</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="brand5">
+                                    <label class="form-check-label" for="brand5">Canon Inc<span>(09)</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="brand6">
+                                    <label class="form-check-label" for="brand6">Fashionox<span>(25)</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="brand7">
+                                    <label class="form-check-label" for="brand7">Samsung<span>(19)</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="brand8">
+                                    <label class="form-check-label" for="brand8">Hitachi<span>(23)</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="brand9">
+                                    <label class="form-check-label" for="brand9">Nike<span>(13)</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="brand10">
+                                    <label class="form-check-label" for="brand10">Panasonic<span>(14)</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="brand11">
+                                    <label class="form-check-label" for="brand11">Puma<span>(16)</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="brand12">
+                                    <label class="form-check-label" for="brand12">Urba Outfitters<span>(17)</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="brand13">
+                                    <label class="form-check-label" for="brand13">Others<span>(18)</span></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="shop-widget">
+                        <h4 class="shop-widget-title">Price Range</h4>
+                        <div class="price-range-box">
+                            <div class="price-range-input">
+                                <input type="text" id="price-amount" readonly>
+                            </div>
+                            <div class="price-range"></div>
+                        </div>
+                    </div>
+                    <div class="shop-widget">
+                        <h4 class="shop-widget-title">Sales</h4>
+                        <ul class="shop-checkbox-list">
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="sale1">
+                                    <label class="form-check-label" for="sale1">On Sale</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="sale2">
+                                    <label class="form-check-label" for="sale2">In Stock</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="sale3">
+                                    <label class="form-check-label" for="sale3">Out Of Stock</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="sale4">
+                                    <label class="form-check-label" for="sale4">Discount</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="shop-widget">
+                        <h4 class="shop-widget-title">Ratings</h4>
+                        <ul class="shop-checkbox-list rating">
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="rate1">
+                                    <label class="form-check-label" for="rate1">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="rate2">
+                                    <label class="form-check-label" for="rate2">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fal fa-star"></i>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="rate3">
+                                    <label class="form-check-label" for="rate3">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fal fa-star"></i>
+                                        <i class="fal fa-star"></i>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="rate4">
+                                    <label class="form-check-label" for="rate4">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fal fa-star"></i>
+                                        <i class="fal fa-star"></i>
+                                        <i class="fal fa-star"></i>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="rate5">
+                                    <label class="form-check-label" for="rate5">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fal fa-star"></i>
+                                        <i class="fal fa-star"></i>
+                                        <i class="fal fa-star"></i>
+                                        <i class="fal fa-star"></i>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="shop-widget">
+                        <h4 class="shop-widget-title">Colors</h4>
+                        <ul class="shop-checkbox-list color">
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="color1">
+                                    <label class="form-check-label" for="color1"><span style="background-color: #606ddd"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="color2">
+                                    <label class="form-check-label" for="color2"><span style="background-color: #4caf50"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="color3">
+                                    <label class="form-check-label" for="color3"><span style="background-color: #17a2b8"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="color4">
+                                    <label class="form-check-label" for="color4"><span style="background-color: #ffc107"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="color5">
+                                    <label class="form-check-label" for="color5"><span style="background-color: #f44336"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="shop-widget">
+                        <h4 class="shop-widget-title">Sizes</h4>
+                        <ul class="shop-checkbox-list">
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="size1">
+                                    <label class="form-check-label" for="size1">Extra Small</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="size2">
+                                    <label class="form-check-label" for="size2">Small</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="size3">
+                                    <label class="form-check-label" for="size3">Medium</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="size4">
+                                    <label class="form-check-label" for="size4">Large</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="size5">
+                                    <label class="form-check-label" for="size5">Extra Large</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="shop-widget-banner mt-30 mb-50">
+                        <div class="banner-img" style="background-image:url({% static 'shop/img/banner/shop-banner.jpg' %})"></div>
+                        <div class="banner-content">
+                            <h6>Get <span>35% Off</span></h6>
+                            <h4>New Collection of Sunglassess</h4>
+                            <a href="#" class="theme-btn">Shop Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="blog-item wow fadeInUp" data-wow-delay=".50s">
-                    <div class="blog-item-img">
-                        <img src="assets/img/blog/02.jpg" alt="Thumb">
-                    </div>
-                    <div class="blog-item-info">
-                        <div class="blog-item-meta">
-                            <ul>
-                                <li><a href="index-3.html#"><i class="far fa-user-circle"></i> By Alicia Davis</a></li>
-                                <li><a href="index-3.html#"><i class="far fa-calendar-alt"></i> January 29, 2024</a></li>
-                            </ul>
+            <div class="col-lg-9">
+                <div class="col-md-12">
+                    <div class="shop-sort">
+                        <div class="shop-sort-box">
+                            <div class="shop-sorty-label">Sort By:</div>
+                            <select class="select">
+                                <option value="1">Default Sorting</option>
+                                <option value="5">Latest Items</option>
+                                <option value="2">Best Seller Items</option>
+                                <option value="3">Price - Low To High</option>
+                                <option value="4">Price - High To Low</option>
+                            </select>
+                            <div class="shop-sort-show">Showing 1-10 of 50 Results</div>
                         </div>
-                        <h4 class="blog-title">
-                            <a href="index-3.html#">There are many variations of passage available majority suffered.</a>
-                        </h4>
-                        <p>There are many variations available the majority have suffered alteration randomised words.</p>
-                        <a class="theme-btn" href="index-3.html#">Read More<i class="fas fa-arrow-right-long"></i></a>
+                        <div class="shop-sort-gl">
+                            <a href="shop-grid.html" class="shop-sort-grid active"><i class="far fa-grid-round-2"></i></a>
+                            <a href="shop-list.html" class="shop-sort-list"><i class="far fa-list-ul"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="blog-item wow fadeInUp" data-wow-delay=".75s">
-                    <div class="blog-item-img">
-                        <img src="assets/img/blog/03.jpg" alt="Thumb">
-                    </div>
-                    <div class="blog-item-info">
-                        <div class="blog-item-meta">
-                            <ul>
-                                <li><a href="index-3.html#"><i class="far fa-user-circle"></i> By Alicia Davis</a></li>
-                                <li><a href="index-3.html#"><i class="far fa-calendar-alt"></i> January 29, 2024</a></li>
-                            </ul>
+                <div class="shop-item-wrapper">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <span class="type">Trending</span>
+                                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p1.png' %}" alt=""></a>
+                                    <div class="product-action-wrap">
+                                        <div class="product-action">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                                    <div class="product-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <div class="product-price">
+                                            <span>$100.00</span>
+                                        </div>
+                                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                                            <i class="far fa-shopping-bag"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h4 class="blog-title">
-                            <a href="index-3.html#">There are many variations of passage available majority suffered.</a>
-                        </h4>
-                        <p>There are many variations available the majority have suffered alteration randomised words.</p>
-                        <a class="theme-btn" href="index-3.html#">Read More<i class="fas fa-arrow-right-long"></i></a>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <span class="type hot">Hot</span>
+                                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p2.png' %}" alt=""></a>
+                                    <div class="product-action-wrap">
+                                        <div class="product-action">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                                    <div class="product-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <div class="product-price">
+                                            <span>$100.00</span>
+                                        </div>
+                                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                                            <i class="far fa-shopping-bag"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <span class="type oos">Out Of Stock</span>
+                                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p3.png' %}" alt=""></a>
+                                    <div class="product-action-wrap">
+                                        <div class="product-action">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                                    <div class="product-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <div class="product-price">
+                                            <span>$100.00</span>
+                                        </div>
+                                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                                            <i class="far fa-shopping-bag"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p4.png' %}" alt=""></a>
+                                    <div class="product-action-wrap">
+                                        <div class="product-action">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                                    <div class="product-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <div class="product-price">
+                                            <span>$100.00</span>
+                                        </div>
+                                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                                            <i class="far fa-shopping-bag"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <span class="type discount">10% Off</span>
+                                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p5.png' %}" alt=""></a>
+                                    <div class="product-action-wrap">
+                                        <div class="product-action">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                                    <div class="product-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <div class="product-price">
+                                            <del>120.00</del><span>$100.00</span>
+                                        </div>
+                                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                                            <i class="far fa-shopping-bag"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p6.png' %}" alt=""></a>
+                                    <div class="product-action-wrap">
+                                        <div class="product-action">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                                    <div class="product-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <div class="product-price">
+                                            <span>$100.00</span>
+                                        </div>
+                                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                                            <i class="far fa-shopping-bag"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <span class="type new">New</span>
+                                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p7.png' %}" alt=""></a>
+                                    <div class="product-action-wrap">
+                                        <div class="product-action">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                                    <div class="product-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <div class="product-price">
+                                            <span>$100.00</span>
+                                        </div>
+                                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                                            <i class="far fa-shopping-bag"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p8.png' %}" alt=""></a>
+                                    <div class="product-action-wrap">
+                                        <div class="product-action">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                                    <div class="product-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <div class="product-price">
+                                            <span>$100.00</span>
+                                        </div>
+                                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                                            <i class="far fa-shopping-bag"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p9.png' %}" alt=""></a>
+                                    <div class="product-action-wrap">
+                                        <div class="product-action">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                                    <div class="product-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <div class="product-price">
+                                            <span>$100.00</span>
+                                        </div>
+                                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                                            <i class="far fa-shopping-bag"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p10.png' %}" alt=""></a>
+                                    <div class="product-action-wrap">
+                                        <div class="product-action">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                                    <div class="product-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <div class="product-price">
+                                            <span>$100.00</span>
+                                        </div>
+                                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                                            <i class="far fa-shopping-bag"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p11.png' %}" alt=""></a>
+                                    <div class="product-action-wrap">
+                                        <div class="product-action">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                                    <div class="product-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <div class="product-price">
+                                            <span>$100.00</span>
+                                        </div>
+                                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                                            <i class="far fa-shopping-bag"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <span class="type hot">Hot</span>
+                                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p12.png' %}" alt=""></a>
+                                    <div class="product-action-wrap">
+                                        <div class="product-action">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                                    <div class="product-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <div class="product-price">
+                                            <span>$100.00</span>
+                                        </div>
+                                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                                            <i class="far fa-shopping-bag"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p13.png' %}" alt=""></a>
+                                    <div class="product-action-wrap">
+                                        <div class="product-action">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                                    <div class="product-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <div class="product-price">
+                                            <span>$100.00</span>
+                                        </div>
+                                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                                            <i class="far fa-shopping-bag"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p17.png' %}" alt=""></a>
+                                    <div class="product-action-wrap">
+                                        <div class="product-action">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                                    <div class="product-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <div class="product-price">
+                                            <span>$100.00</span>
+                                        </div>
+                                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                                            <i class="far fa-shopping-bag"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p16.png' %}" alt=""></a>
+                                    <div class="product-action-wrap">
+                                        <div class="product-action">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                                    <div class="product-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <div class="product-price">
+                                            <span>$100.00</span>
+                                        </div>
+                                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                                            <i class="far fa-shopping-bag"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p30.png' %}" alt=""></a>
+                                    <div class="product-action-wrap">
+                                        <div class="product-action">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                                    <div class="product-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <div class="product-price">
+                                            <span>$100.00</span>
+                                        </div>
+                                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                                            <i class="far fa-shopping-bag"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p32.png' %}" alt=""></a>
+                                    <div class="product-action-wrap">
+                                        <div class="product-action">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                                    <div class="product-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <div class="product-price">
+                                            <span>$100.00</span>
+                                        </div>
+                                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                                            <i class="far fa-shopping-bag"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p33.png' %}" alt=""></a>
+                                    <div class="product-action-wrap">
+                                        <div class="product-action">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                                    <div class="product-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <div class="product-price">
+                                            <span>$100.00</span>
+                                        </div>
+                                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                                            <i class="far fa-shopping-bag"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <span class="type new">New</span>
+                                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p36.png' %}" alt=""></a>
+                                    <div class="product-action-wrap">
+                                        <div class="product-action">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                                    <div class="product-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <div class="product-price">
+                                            <span>$100.00</span>
+                                        </div>
+                                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                                            <i class="far fa-shopping-bag"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p37.png' %}" alt=""></a>
+                                    <div class="product-action-wrap">
+                                        <div class="product-action">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                                    <div class="product-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <div class="product-price">
+                                            <span>$100.00</span>
+                                        </div>
+                                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                                            <i class="far fa-shopping-bag"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a href="shop-single.html"><img src="{% static 'shop/img/product/p42.png' %}" alt=""></a>
+                                    <div class="product-action-wrap">
+                                        <div class="product-action">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#quickview" data-tooltip="tooltip" title="Quick View"><i class="far fa-eye"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Wishlist"><i class="far fa-heart"></i></a>
+                                            <a href="#" data-tooltip="tooltip" title="Add To Compare"><i class="far fa-arrows-repeat"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="product-title"><a href="shop-single.html">Bluetooth Earphones</a></h3>
+                                    <div class="product-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <div class="product-price">
+                                            <span>$100.00</span>
+                                        </div>
+                                        <button type="button" class="product-cart-btn" data-bs-placement="left" data-tooltip="tooltip" title="Add To Cart">
+                                            <i class="far fa-shopping-bag"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- pagination -->
+                <div class="pagination-area mb-0">
+                    <div aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true"><i class="far fa-arrow-left"></i></span>
+                                </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><span class="page-link">...</span></li>
+                            <li class="page-item"><a class="page-link" href="#">10</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true"><i class="far fa-arrow-right"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- pagination end -->
             </div>
         </div>
     </div>
 </div>
-<!-- blog area end -->
+<!-- shop-area end -->
 
 
-<!-- newsletter area -->
-<div class="newsletter-area pt-60 pb-60">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 mx-auto">
-                <div class="newsletter-content">
-                    <h3>Get <span>20%</span> Off Discount Coupon</h3>
-                    <p>By Subscribe Our Newsletter</p>
-                    <div class="subscribe-form">
-                        <form action="index-3.html#">
-                            <input type="email" class="form-control" placeholder="Your Valid Email Address">
-                            <button class="theme-btn" type="submit">
-                                Subscribe <i class="far fa-paper-plane"></i>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="newsletter-img-1">
-        <img src="assets/img/newsletter/01.png" alt="">
-    </div>
-    <div class="newsletter-img-2">
-        <img src="assets/img/newsletter/02.png" alt="">
-    </div>
-</div>
-<!-- newsletter area end -->
 
 {% endblock %}

@@ -1,3 +1,5 @@
+{% load static %}
+
 <div class="header-top">
     <div class="container">
         <div class="header-top-wrapper">
@@ -6,21 +8,19 @@
                     <div class="header-top-left">
                         <ul class="header-top-list">
                             {% if settings.email %}
-                            <li>
-                                <a href="mailto:{{ settings.email }}">
-                                    <i class="far fa-envelopes"></i>
-                                    {{ settings.email }}
-                                </a>
-                            </li>
+                                <li>
+                                    <a href="mailto:{{ settings.email }}">
+                                        <i class="far fa-envelopes"></i>
+                                        {{ settings.email }}
+                                    </a>
+                                </li>
                             {% endif %}
-
                             {% if settings.phone %}
-                            <li>
-                                <a href="tel:{{ settings.phone }}">
-                                    <i class="far fa-headset"></i>
-                                    {{ settings.phone }}
-                                </a>
-                            </li>
+                                <li>
+                                    <a href="tel:+21236547898"><i class="far fa-headset"></i>
+                                        +2 123 654 7898
+                                    </a>
+                                </li>
                             {% endif %}
                         </ul>
                     </div>
@@ -28,61 +28,40 @@
                 <div class="col-12 col-md-6 col-lg-6 col-xl-7">
                     <div class="header-top-right">
                         <ul class="header-top-list">
-                            <li>
-                                <a href="#">
-                                    <i class="far fa-alarm-clock"></i>
-                                    Daily Deal
-                                </a>
-                            </li>
-                            <li class="account">
-                                <a href="#">
-                                    <i class="far fa-user-vneck"></i>
-                                    Account
-                                </a>
-                            </li>
                             <li class="login">
-                                <a href="#">
-                                    <i class="far fa-arrow-right-to-arc"></i>
+                                <a href="{% url 'shop:login' %}">
+                                    <i class="fa-regular fa-arrow-right-to-bracket"></i>
                                     Login
                                 </a>
                             </li>
-                            <li>
-                                <div class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="far fa-usd"></i>
-                                        USD
-                                    </a>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">USD</a>
-                                        <a class="dropdown-item" href="#">EUR</a>
-                                        <a class="dropdown-item" href="#">AUD</a>
-                                        <a class="dropdown-item" href="#">CUD</a>
+                            <li class="login">
+                                <a href="{% url 'shop:register' %}">
+                                    <i class="fa-regular fa-user"></i>
+                                    Register
+                                </a>
+                            </li>
+                            {% if settings.facebook or settings.twitter or settings.instagram or settings.linkedin %}
+                                <li class="social">
+                                    <div class="header-top-social">
+                                        <span>Follow Us:</span>
+                                        {% if settings.facebook %}
+                                            <a href="{{ settings.facebook }}"><i class="fab fa-facebook"></i></a>
+                                        {% endif %}
+
+                                        {% if settings.twitter %}
+                                            <a href="{{ settings.twitter }}"><i class="fab fa-twitter"></i></a>
+                                        {% endif %}
+
+                                        {% if settings.instagram %}
+                                            <a href="{{ settings.instagram }}"><i class="fab fa-instagram"></i></a>
+                                        {% endif %}
+
+                                        {% if settings.linkedin %}
+                                            <a href="{{ settings.linkedin }}"><i class="fab fa-linkedin"></i></a>
+                                        {% endif %}
                                     </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="far fa-globe-americas"></i>
-                                        EN
-                                    </a>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">EN</a>
-                                        <a class="dropdown-item" href="#">FR</a>
-                                        <a class="dropdown-item" href="#">DE</a>
-                                        <a class="dropdown-item" href="#">RU</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="social">
-                                <div class="header-top-social">
-                                    <span>Follow Us: </span>
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                                </div>
-                            </li>
+                                </li>
+                            {% endif %}
                         </ul>
                     </div>
                 </div>

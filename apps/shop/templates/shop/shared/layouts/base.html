@@ -3,33 +3,24 @@
 
 <head>
     {% include "shop/shared/partials/head.html" %}
+    {% block extra_css %}{% endblock %}
 </head>
-
-
 
 <body>
     {% include "shop/shared/partials/preloader.html" %}
-
     <header class="header">
         {% include "shop/shared/partials/topbar.html" %}
         {% include "shop/shared/partials/middlebar.html" %}
         {% include "shop/shared/partials/navbar.html" %}
     </header>
-
     <main class="main">
-
-
+        {% include "shop/shared/partials/slider.html" %}
         {% block content %}{% endblock %}
     </main>
-
     {% include "shop/shared/partials/footer.html" %}
     {% include "shop/shared/partials/scroll.html" %}
-    {% include "shop/shared/partials/quick_view_modal.html" %}
-
-
-
-
     {% include "shop/shared/partials/scripts.html" %}
+    {% block extra_js %}{% endblock %}
 </body>
 
 </html>

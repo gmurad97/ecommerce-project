@@ -15,3 +15,22 @@
 <script src="{% static 'shop/js/countdown.min.js' %}"></script>
 <script src="{% static 'shop/js/wow.min.js' %}"></script>
 <script src="{% static 'shop/js/main.js' %}"></script>
+
+{% if settings.snow_mode %}
+    <script src="{% static 'shop/js/snowflakes.min.js' %}"></script>
+    <script>
+        new Snowflakes({
+            color: "rgb(64, 115, 158)",
+            count: 128,
+            minOpacity: 0.32,
+            maxOpacity: 0.96,
+            minSize: 16,
+            maxSize: 32,
+            rotation: true,
+            speed: 1,
+            wind: true,
+            zIndex: 9999,
+            autoResize: true
+        });
+    </script>
+{% endif %}

@@ -2,6 +2,8 @@ from django.shortcuts import render
 
 from apps.shop.models.product import Product
 from apps.shop.models.setting import Setting
+from apps.shop.models.category import Category
+from apps.shop.models.brand import Brand
 
 from django.shortcuts import redirect
 from django.urls import reverse
@@ -31,6 +33,18 @@ def index(request):
     context = {
         "page_title": "Home",  # НА КАЖДОЙ СТРАНИЦЕ!
         "settings": Setting.objects.first(),  # НА КАЖДОЙ СТРАНИЦЕ!
+        "categories": {
+            "all": Category.objects.all(),
+            "searchbar": Category.objects.all(),
+            "navbar": Category.objects.all(),
+        },
+        "brands": {
+            "all": Brand.objects.all(),
+            "navbar": Brand.objects.all(),
+        },
+
+
+
         "xsro": Product.objects.all(),
     }
     return render(request, "shop/index.html", context)
@@ -64,12 +78,44 @@ def category_list():
     pass
 
 
-def brand_products():
-    pass
+def brand_products(request, slug_id):
+    context = {
+        "page_title": "Home",  # НА КАЖДОЙ СТРАНИЦЕ!
+        "settings": Setting.objects.first(),  # НА КАЖДОЙ СТРАНИЦЕ!
+        "categories": {
+            "all": Category.objects.all(),
+            "searchbar": Category.objects.all(),
+        },
+        "brands": {
+            "all": Brand.objects.all(),
+            "navbar": Brand.objects.all(),
+        },
 
 
-def brand_list():
-    pass
+
+        "xsro": Product.objects.all(),
+    }
+    return render(request, "shop/index.html", context)
+
+
+def brand_list(request):
+    context = {
+        "page_title": "Home",  # НА КАЖДОЙ СТРАНИЦЕ!
+        "settings": Setting.objects.first(),  # НА КАЖДОЙ СТРАНИЦЕ!
+        "categories": {
+            "all": Category.objects.all(),
+            "searchbar": Category.objects.all(),
+        },
+        "brands": {
+            "all": Brand.objects.all(),
+            "navbar": Brand.objects.all(),
+        },
+
+
+
+        "xsro": Product.objects.all(),
+    }
+    return render(request, "shop/index.html", context)
 
 
 def product_list():

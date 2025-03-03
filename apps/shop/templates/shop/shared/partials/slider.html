@@ -1,91 +1,99 @@
-        <!-- hero slider -->
-        <div class="hero-section3">
-            <div class="container-fluid px-0">
-                <div class="hero-slider owl-carousel owl-theme">
-                    <div class="hero-single">
-                        <div class="hero-single-bg" style="background-image: url(assets/img/slider/slider-1.jpg)"></div>
-                        <div class="container">
-                            <div class="row align-items-center">
-                                <div class="col-md-12 col-lg-6">
-                                    <div class="hero-content">
-                                        <h6 class="hero-sub-title" data-animation="fadeInUp" data-delay=".25s">Up To 50% Off</h6>
-                                        <h1 class="hero-title" data-animation="fadeInRight" data-delay=".50s">
-                                            For Your First <br> <span>Goemart</span> Shopping
-                                        </h1>
-                                        <p data-animation="fadeInLeft" data-delay=".75s">
-                                            There are many variations of passages orem psum available but the majority have
-                                            suffered are going to use a passage alteration in some form by injected humour.
-                                        </p>
-                                        <div class="hero-btn" data-animation="fadeInUp" data-delay="1s">
-                                            <a href="index-3.html#" class="theme-btn">Shop Now<i class="fas fa-arrow-right"></i></a>
-                                        </div>
-                                    </div>
+{% load static %}
+
+<div class="hero-section3">
+    <div class="container-fluid px-0">
+        <div class="hero-slider owl-carousel owl-theme">
+            <div class="hero-single">
+                <div class="hero-single-bg" style="background-image: url({% static 'shop/img/slider/slider-1.jpg' %})"></div>
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="hero-content">
+                                <h6 class="hero-sub-title" data-animation="fadeInUp" data-delay=".25s">Up To 50% Off</h6>
+                                <h1 class="hero-title" data-animation="fadeInRight" data-delay=".50s">
+                                    For Your First <br> <span>Goemart</span> Shopping
+                                </h1>
+                                <p data-animation="fadeInLeft" data-delay=".75s">
+                                    There are many variations of passages orem psum available but the majority have
+                                    suffered are going to use a passage alteration in some form by injected humour.
+                                </p>
+                                <div class="hero-btn" data-animation="fadeInUp" data-delay="1s">
+                                    <a href="#" class="theme-btn">Shop Now<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="hero-single">
-                        <div class="hero-single-bg" style="background-image: url(assets/img/slider/slider-2.jpg)"></div>
-                        <div class="container">
-                            <div class="row align-items-center">
-                                <div class="col-md-12 col-lg-6">
-                                    <div class="hero-content">
-                                        <h6 class="hero-sub-title" data-animation="fadeInUp" data-delay=".25s">Up To 50% Off</h6>
-                                        <h1 class="hero-title" data-animation="fadeInRight" data-delay=".50s">
-                                            For Your First <br> <span>Goemart</span> Shopping
-                                        </h1>
-                                        <p data-animation="fadeInLeft" data-delay=".75s">
-                                            There are many variations of passages orem psum available but the majority have
-                                            suffered are going to use a passage alteration in some form by injected humour.
-                                        </p>
-                                        <div class="hero-btn" data-animation="fadeInUp" data-delay="1s">
-                                            <a href="index-3.html#" class="theme-btn">Shop Now<i class="fas fa-arrow-right"></i></a>
-                                        </div>
-                                    </div>
+                </div>
+            </div>
+            <div class="hero-single">
+                <div class="hero-single-bg" style="background-image: url({% static 'shop/img/slider/slider-2.jpg' %})"></div>
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="hero-content">
+                                <h6 class="hero-sub-title" data-animation="fadeInUp" data-delay=".25s">Up To 50% Off</h6>
+                                <h1 class="hero-title" data-animation="fadeInRight" data-delay=".50s">
+                                    For Your First <br> <span>Goemart</span> Shopping
+                                </h1>
+                                <p data-animation="fadeInLeft" data-delay=".75s">
+                                    There are many variations of passages orem psum available but the majority have
+                                    suffered are going to use a passage alteration in some form by injected humour.
+                                </p>
+                                <div class="hero-btn" data-animation="fadeInUp" data-delay="1s">
+                                    <a href="{% url 'shop:home' %}" class="theme-btn">
+                                        Shop Now
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="hero-single">
-                        <div class="hero-single-bg" style="background-image: url(assets/img/slider/slider-3.jpg)"></div>
-                        <div class="container">
-                            <div class="row align-items-center">
-                                <div class="col-md-12 col-lg-6">
-                                    <div class="hero-content">
-                                        <h6 class="hero-sub-title" data-animation="fadeInUp" data-delay=".25s">Up To 50% Off</h6>
-                                        <h1 class="hero-title" data-animation="fadeInRight" data-delay=".50s">
-                                            For Your First <br> <span>Goemart</span> Shopping
-                                        </h1>
-                                        <p data-animation="fadeInLeft" data-delay=".75s">
-                                            There are many variations of passages orem psum available but the majority have
-                                            suffered are going to use a passage alteration in some form by injected humour.
-                                        </p>
-                                        <div class="hero-btn" data-animation="fadeInUp" data-delay="1s">
-                                            <a href="index-3.html#" class="theme-btn">Shop Now<i class="fas fa-arrow-right"></i></a>
-                                        </div>
-                                    </div>
+                </div>
+            </div>
+            <div class="hero-single">
+                <div class="hero-single-bg" style="background-image: url({% static 'shop/img/slider/slider-3.jpg' %})"></div>
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="hero-content">
+                                <h6 class="hero-sub-title" data-animation="fadeInUp" data-delay=".25s">Up To 50% Off</h6>
+                                <h1 class="hero-title" data-animation="fadeInRight" data-delay=".50s">
+                                    For Your First <br> <span>Goemart</span> Shopping
+                                </h1>
+                                <p data-animation="fadeInLeft" data-delay=".75s">
+                                    There are many variations of passages orem psum available but the majority have
+                                    suffered are going to use a passage alteration in some form by injected humour.
+                                </p>
+                                <div class="hero-btn" data-animation="fadeInUp" data-delay="1s">
+                                    <a href="{% url 'shop:home' %}" class="theme-btn">
+                                        Shop Now
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="hero-single">
-                        <div class="hero-single-bg" style="background-image: url(assets/img/slider/slider-4.jpg)"></div>
-                        <div class="container">
-                            <div class="row align-items-center">
-                                <div class="col-md-12 col-lg-6">
-                                    <div class="hero-content">
-                                        <h6 class="hero-sub-title" data-animation="fadeInUp" data-delay=".25s">Up To 50% Off</h6>
-                                        <h1 class="hero-title" data-animation="fadeInRight" data-delay=".50s">
-                                            For Your First <br> <span>Goemart</span> Shopping
-                                        </h1>
-                                        <p data-animation="fadeInLeft" data-delay=".75s">
-                                            There are many variations of passages orem psum available but the majority have
-                                            suffered are going to use a passage alteration in some form by injected humour.
-                                        </p>
-                                        <div class="hero-btn" data-animation="fadeInUp" data-delay="1s">
-                                            <a href="index-3.html#" class="theme-btn">Shop Now<i class="fas fa-arrow-right"></i></a>
-                                        </div>
-                                    </div>
+                </div>
+            </div>
+            <div class="hero-single">
+                <div class="hero-single-bg" style="background-image: url({% static 'shop/img/slider/slider-4.jpg' %})"></div>
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="hero-content">
+                                <h6 class="hero-sub-title" data-animation="fadeInUp" data-delay=".25s">Up To 50% Off</h6>
+                                <h1 class="hero-title" data-animation="fadeInRight" data-delay=".50s">
+                                    For Your First <br> <span>Goemart</span> Shopping
+                                </h1>
+                                <p data-animation="fadeInLeft" data-delay=".75s">
+                                    There are many variations of passages orem psum available but the majority have
+                                    suffered are going to use a passage alteration in some form by injected humour.
+                                </p>
+                                <div class="hero-btn" data-animation="fadeInUp" data-delay="1s">
+                                    <a href="{% url 'shop:home' %}" class="theme-btn">
+                                        Shop Now
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -93,4 +101,5 @@
                 </div>
             </div>
         </div>
-        <!-- hero slider end -->
+    </div>
+</div>
