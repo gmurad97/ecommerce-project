@@ -20,7 +20,7 @@ class Category(models.Model):
         verbose_name="Slug",
         help_text="URL-friendly unique identifier.",
     )
-    image = models.ImageField(
+    image = models.FileField(
         upload_to="category/image/",
         validators=[FileExtensionValidator(["jpg", "jpeg", "png", "svg", "gif", "webp", "bmp", "tiff"])],
         blank=True,

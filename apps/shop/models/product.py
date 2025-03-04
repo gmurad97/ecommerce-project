@@ -88,7 +88,7 @@ class Product(models.Model):
         verbose_name="Discount",
         help_text="The discount percentage (0.00 to 100.00).",
     )
-    image = models.ImageField(
+    image = models.FileField(
         upload_to="products/%Y/%m/%d/",
         validators=[FileExtensionValidator(["jpg", "jpeg", "png", "svg", "gif", "webp", "bmp", "tiff"])],
         blank=True,

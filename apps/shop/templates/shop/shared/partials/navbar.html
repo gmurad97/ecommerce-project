@@ -13,16 +13,16 @@
                 </button>
                 <ul class="main-category hide-category">
                     {% for category in categories.all %}
-                        <li>
-                            <a href="{{ category.get_absolute_url }}">
-                                {% if not category.image %}
-                                    <img src="{{ category.image.url }}" alt="{{ category.name }}">
-                                {% else %}
-                                    <img src="{% static 'shop/img/icon/no-image.svg' %}" alt="{{ category.name }}">
-                                {% endif %}
-                                <span>{{ category.name }}</span>
-                            </a>
-                        </li>
+                    <li>
+                        <a href="{{ category.get_absolute_url }}">
+                            {% if category.image %}
+                            <img src="{{ category.image.url }}" alt="{{ category.name }}">
+                            {% else %}
+                            <img src="{% static 'shop/img/icon/no-image.svg' %}" alt="{{ category.name }}">
+                            {% endif %}
+                            <span>{{ category.name }}</span>
+                        </a>
+                    </li>
                     {% endfor %}
                 </ul>
             </div>
@@ -59,12 +59,16 @@
                         </a>
                         <ul class="dropdown-menu fade-down">
                             <li>
-                                {% for brand in brands.navbar %}
-                                    <a class="dropdown-item {% navlink request=request url_name='shop:brand_products' exact_match=True slug_id=brand.slug %}" href="{{ brand.get_absolute_url }}">
-                                        {{ brand.name }}
-                                    </a>
-                                {% endfor %}
+                                <a class="dropdown-item {% navlink request=request url_name='shop:brand_list' exact_match=True %}" href="{% url 'shop:brand_list' %}">All
+                                </a>
                             </li>
+                            {% for brand in brands.navbar %}
+                            <li>
+                                <a class="dropdown-item {% navlink request=request url_name='shop:brand_products' exact_match=True slug_id=brand.slug %}" href="{{ brand.get_absolute_url }}">
+                                    {{ brand.name }}
+                                </a>
+                            </li>
+                            {% endfor %}
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -73,13 +77,22 @@
                         </a>
                         <ul class="dropdown-menu fade-down">
                             <li>
-                                {% for category in categories.navbar %}
-                                    <a class="dropdown-item {% navlink request=request url_name='shop:category_products' exact_match=True slug_id=category.slug %}" href="{{ category.get_absolute_url }}">
-                                        {{ category.name }}
-                                    </a>
-                                {% endfor %}
+                                <a class="dropdown-item {% navlink request=request url_name='shop:category_list' exact_match=True %}" href="{% url 'shop:category_list' %}">All
+                                </a>
                             </li>
+                            {% for category in categories.navbar %}
+                            <li>
+                                <a class="dropdown-item {% navlink request=request url_name='shop:category_products' exact_match=True slug_id=category.slug %}" href="{{ category.get_absolute_url }}">
+                                    {{ category.name }}
+                                </a>
+                            </li>
+                            {% endfor %}
                         </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% navlink request=request url_name='shop:product_list' exact_match=True %}" href="{% url 'shop:product_list' %}">
+                            Products
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% navlink request=request url_name='shop:faq' exact_match=True %}" href="{% url 'shop:faq' %}">

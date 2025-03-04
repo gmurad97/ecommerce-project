@@ -14,7 +14,9 @@
         {% include "shop/shared/partials/navbar.html" %}
     </header>
     <main class="main">
-        {% include "shop/shared/partials/slider.html" %}
+        {% if with_slider %}
+            {% include "shop/shared/partials/slider.html" %}
+        {% endif %}
         {% block content %}{% endblock %}
     </main>
     {% include "shop/shared/partials/footer.html" %}
