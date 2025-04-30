@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = (
-    "django-insecure--gs*-c=@1m5n6#spt*hpa#jx^(28l_q74yc6hwgud)_z&e!y#n"
+    "django-insecure-!(1ntq@*fzwtr0sm^%+dle!nv5@rzbzu--ok6!(*$0^jd6_o19"
 )
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -118,11 +118,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = "static/"
-STATICFILES_DIRS = [BASE_DIR / "static"]
 STATIC_ROOT = BASE_DIR / "staticfiles"
+STATICFILES_DIRS = [BASE_DIR / "static"]
 
 # Media files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.1/topics/files/
+# https://docs.djangoproject.com/en/5.2/topics/files/
 
 MEDIA_URL = "media/"
 MEDIA_ROOT = BASE_DIR / "media"
