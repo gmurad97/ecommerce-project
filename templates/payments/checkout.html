@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stripe Payment</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.7/dist/tailwind.min.css">
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-100">
+    <div class="w-full max-w-md p-6 bg-white rounded-lg shadow-md">
+        <h2 class="text-2xl font-bold mb-4 text-center">Stripe Payment</h2>
+        <form id="payment-form" class="space-y-4">
+            <div>
+                <label class="block text-sm font-medium">Cardholder Name</label>
+                <input type="text" class="mt-1 block w-full p-2 border rounded-md" placeholder="Cardholder Name" required />
+            </div>
+            <div>
+                <label class="block text-sm font-medium">Card Details</label>
+                <div id="card-element" class="mt-1 p-2 border rounded-md"></div>
+            </div>
+            <button id="submit" class="w-full mt-4 py-2 px-4 bg-blue-600 text-white rounded-md hover:bg-blue-700">
+                Pay
+            </button>
+        </form>
+        <div id="error-message" class="mt-2 text-red-600 hidden"></div>
+    </div>
+
+    <script src="https://js.stripe.com/v3/"></script>
+    <script>
+        const stripe = Stripe("pk_test_51RNPX4QSrPIasF7xWfdrWlruqSeQ7XpMtiDh7VSVFMmGyzEfdOSRZnbkwfe0biVrpB7u0HH26b5TPvMVUVVYgvvy00SRwVSsXx");
+        const elements = stripe.elements();
+        const card = elements.create("card", { style: { base: { fontSize: "16px" } } });
+        card.mount("#card-element");
+
+        document.getElementById('payment-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const { error, paymentMethod } = await stripe.createPaymentMethod({
+                type: 'card',
+                card: card,
+            });
+
+            const errorMessage = document.getElementById("error-message");
+            if (error) {
+                errorMessage.textContent = error.message;
+                errorMessage.classList.remove("hidden");
+            } else {
+                errorMessage.classList.add("hidden");
+                const response = await fetch("/payments/create-checkout-session/", {
+                    method: 'POST'
+                });
+                const session = await response.json();
+                stripe.redirectToCheckout({ sessionId: session.id });
+            }
+        });
+    </script>
+</body>
+</html>

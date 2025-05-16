@@ -22,7 +22,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('accounts/', include('django.contrib.auth.urls')),  # Встроенные маршруты аутентификации
+    path('payments/', include('payments.urls')),
 ]
 
 if settings.DEBUG:
